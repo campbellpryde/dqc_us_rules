@@ -14,6 +14,14 @@ The reporting period end date refers to the reporting period of the filer. This 
 
 If one of the components in a comparison does not exist then the comparison will not occur. For example if the rule tests Assets = LiabilitiesAndShareholdersEquity and one of the elements is missing, the test will not run. 
 
+## Text Comparison
+
+When the text contained in an element name is matched using string matching (referred to as "Contains the Text") it is assumed that all text comparison of the element name is case insensitive unless otherwise stated. When element names are referenced in a rule however the matching is case sensitive.
+
+## Element Comparison
+
+A number of rules reference a list of elements to execute a rule. The rule should match based on the element name and the namespace in the list and the element name used in the instance. Rules should not execute based on the label name of an element unless explicitly stated in the rule form.
+
 ## Decimal Comparison
 
 When comparing two numeric fact values in a rule, the comparison needs to take into account different decimals. Numbers are compared based on the lowest decimal value rounded per XBRL specification. For example, the number 532,000,000 with decimals of -6 is considered to be equivalent to 532,300,000 with a decimals value of -5. In this case the 532,300,000 is rounded to a million and then compared to the value of 532,000,000.  (Note that XBRL specifies "round half to nearest even" so 532,500,000 with decimals -6 rounds to 532,000,000, and 532,500,001 rounds to 533,000,000.)
