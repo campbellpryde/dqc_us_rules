@@ -1,6 +1,6 @@
 # XBRL US Data Quality Committee Rules
 
-dqc_us_rules is a plugin for Arelle 
+dqc_us_rules is a plugin for Arelle
 
 ## dqc_us_rules contains:
 
@@ -15,9 +15,17 @@ dqc_us_rules is a plugin for Arelle
 * Deploy with Arelle
 * Specify the sec directory as a plugin with Arelle
 
-### Requirements
+## Versioning
 
-* Python 3.x (3.2 or greater is preferred)
+The dqc_us_rules library follows a standard semantic versioning system of MAJOR.MINOR.FIX format. Major releases are specified when a new set of rules have been approved, coded, and accepted by the DQC after a public comment period.
+
+The MAJOR version specified by each individual rule is the most-recent release version in which the rule was altered. For example, a rule being marked as v2.0.0 would have last been functionally modified during the 2.0.0 release of the DQC library. See [summary of rules](/docs/README.md) for current rule version detail (which is [also found in each rule's code](https://github.com/DataQualityCommittee/dqc_us_rules/search?q=_RULE_VERSION)).
+
+Similarly, the entire set of rules is versioned. MAJOR release is specified at the beginning of each public comment period, suffixed with Release Candidate subversions (RC) to denote revisions prior to the approved release. 
+
+## Requirements
+
+* Python 3.x (3.4 or greater is preferred)
 * Git 1.7+
 * C compiler toolchain (for LXML)
 * libxml2 (also for LXML)
@@ -32,7 +40,7 @@ The rest of this setup will assume you have installed [virtualenv](http://www.vi
 ### Creating a virtual environment
 
 To create a virtual environment, change your directory to the root of this project, and execute the following command:
-    
+
     mkvirtualenv dqc -a $PWD -p <path_to_python3>
 
 This will give you a virtual environment that you can then work within by inputting
@@ -43,13 +51,9 @@ any time you need to work in it.
 
 ### Installing dependencies
 
-To install the dependencies for development of only the DQC ruleset, you will use [pip](https://pip.pypa.io/en/latest/installing.html) to install the requirements.  Install Arelle as a package first
+To install the dependencies for development of only the DQC ruleset, you will use [pip](https://pip.pypa.io/en/latest/installing.html) to install the requirements. Install the development requirements using:
 
-    pip install -r arelle-requirements.txt
-
-When that is finished, then install the remainder of the development requirements
-
-    pip install dev-requirements.txt
+    pip install -r requirements-dev.txt
 
 ### Running unit tests
 
@@ -65,13 +69,59 @@ See documentation in the test suite
 
 The rule definition index is [here](docs/README.md).
 
-## Change Management
+## Proposed Changes
 
-We actively accept, and encourage, pull requests for code changes.  An explanation of the change is required, and the request will be reviewed by the technical leads of the project.  If the request is accepted it will be merged into the master branch. Some requests may require Committee approval which may take longer to implement.  If the request is found to be missing parts or is otherwise incomplete, comments will be noted regarding the missing or incomplete parts.
+We actively accept, and encourage, pull requests for code changes. A list of the requirements for a pull request follows, and the request will be reviewed by the technical leads of the project. If the request is accepted it will be merged into the appropriate branch. Some requests may require Committee approval which may take longer to implement. If the request is found to be missing parts or is otherwise incomplete, comments will be noted regarding the missing or incomplete parts.
+
+### Development of Rules that are "Ready for Coding":
+
+When new rules that have been approved for coding are released by the DQC, the rules will be developed on a branch named `next_q#_YY` where the `#` is the quarter, and the `YY` is replaced by the current year. All new coding for the proposed rules will target this branch on the root DataQualityCommittee fork. Periodically, this branch will be tagged and released on the global pypi index as a release candidate (RC). Once final approval for the rules is complete, the RC versions of the library will be removed from the index, the next branch wil be merged into master, and a new major version of the library will be released on the [global pypi index](https://pypi.python.org/simple/dqc-us-rules/).
+
+### Requirements for a Pull Request (PR):
+
+  - Branch off master, develop on your independent fork, PR back to master or other appropriate branch on the root fork.
+  - Your code should pass [flake8](https://flake8.readthedocs.org/en/latest/).
+  - Unit test coverage is required or an explanation for why the change is already covered or not coverable.
+  - Good [Docstrings](https://github.com/Workiva/styleguide/blob/master/PYTHON.rst#docstrings) are required.
+  - Good [commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) are required.
+  - The pull request must go through the review process described below.
+
+### Pull Request Review Process:
+
+  - Each pull request must have at least one `+1` comment from another community member.
+  - For code changes, you must have a second `+1` comment from a second community member.
+  - The request will need to go through the Quality Assurance process defined below and receive a `+10` comment. This can be from any other community member, including one of the reviewers.
+  - At this point, the request can be submitted to one of the project maintainers to be merged.
+
+### Quality Assurance (QA) of a Pull Request:
+  - Verify that the code passes flake8 on both the code and tests.
+  - Verify that the code passes unit tests.
+  - Verify that tests were added or updated to reflect the changes made. If tests were not added, check for a reasoning in the pull request to justify the absence.
+  - This template contains all the steps, and can be used as a step-by-step guide.
+
+        #### QA Steps:
+
+        - Manual testing: <Enter Manual testing notes here.>
+        - Flake8 on dqc_us_rules:
+        ```
+        <Paste output of flake8 on the dqc_us_rules directory here.>
+        ```
+        - Flake8 on tests:
+        ```
+        <Paste output of flake8 on the tests directory here.>
+        ```
+        - Nosetest result:
+        ```
+        <Paste output of nose tests here.>
+        ```
+
+        #### Result: <Put result here.>
+
+The result will be any of a few things. For example a +10 for passing, or just a comment like "sent back for rework", or whatever else is needed to be done before another pass at QA.
 
 ## License
 
-See [License](License.md) for license information.  
-See [Patent Notice](PatentNotice.md) for patent infringement notice.
+See [License](https://xbrl.us/dqc-license) for license information.  
+See [Patent Notice](https://xbrl.us/dqc-patent) for patent infringement notice.
 
-Copyright 2015, XBRL US Inc, All rights reserved
+Copyright 2015 - 2017, XBRL US Inc. All rights reserved.
