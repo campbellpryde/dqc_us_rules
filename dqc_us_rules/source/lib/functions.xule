@@ -1030,7 +1030,7 @@ function concept_pair_from_name_pair($pair)
 
 function applicable_form($ruleName)
 		$rule_number = ($ruleName.split('.'))[($ruleName.split('.').length)-1];
-		$ApplicableForms = $RULE-FORM-LOOKUP[$rule_number]
+		$ApplicableForms = $RULE-FORM-LOOKUPc[$rule_number]
 		$ApplicableForms.contains($DOCUMENT_TYPE) or  $DOCUMENT_TYPE == none or $ApplicableForms == none
 
 /**
@@ -1045,5 +1045,5 @@ function applicable_form($ruleName)
 
 
 function applicable_form_string($ruleNnumber)
-		$ApplicableForms = $RULE-FORM-LOOKUP[$ruleNnumber]
+		$ApplicableForms = $RULE-FORM-LOOKUPc[$ruleNnumber]
 		$ApplicableForms.contains($DOCUMENT_TYPE) or  $DOCUMENT_TYPE == none or $ApplicableForms == none
