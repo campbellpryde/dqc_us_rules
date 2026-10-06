@@ -20,7 +20,7 @@ else
 
 
 
-     $SOICube = filter taxonomy().cubes where $item.cube-concept.name in set(ScheduleOfInvestmentsTable,InvestmentsSoldNotYetPurchasedTable) and (not $item.drs-role.uri.lower-case.contains('parenthetical')) 
+     $SOICube = filter taxonomy().cubes where $item.cube-concept.name in set(ScheduleOfInvestmentsTable) and (not $item.drs-role.uri.lower-case.contains('parenthetical')) 
 
    for $cube in $SOICube
                 $BDCInvestmentFact = first-value({@InvestmentInterestRate @cube = $cube}, {@InvestmentBasisSpreadVariableRate @cube = $cube},{@InvestmentInterestRateFloor @cube = $cube})
