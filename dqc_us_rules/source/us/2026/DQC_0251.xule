@@ -28,7 +28,18 @@ constant $UUPO_CONCEPTS = set(UnrecordedUnconditionalPurchaseObligationBalanceSh
                             UnrecordedUnconditionalPurchaseObligationBalanceOnThirdAnniversary,
                             UnrecordedUnconditionalPurchaseObligationBalanceOnFourthAnniversary,
                             UnrecordedUnconditionalPurchaseObligationBalanceOnFifthAnniversary,
-                            UnrecordedUnconditionalPurchaseObligationDueAfterFiveYears)
+                            UnrecordedUnconditionalPurchaseObligationDueAfterFiveYears,
+							UnrecordedUnconditionalPurchaseObligationDueInRemainderOfFiscalYear,
+							UnrecordedUnconditionalPurchaseObligationDueInNextRollingTwelveMonths,
+							UnrecordedUnconditionalPurchaseObligationDueInRollingYearTwo,
+							UnrecordedUnconditionalPurchaseObligationDueInRollingYearThree,
+							UnrecordedUnconditionalPurchaseObligationDueInRollingYearFour,
+							UnrecordedUnconditionalPurchaseObligationDueInRollingYearFive,
+							UnrecordedUnconditionalPurchaseObligationDueInRollingAfterYearFive,
+							UnrecordedUnconditionalPurchaseObligationChangeOfAmountAsResultOfVariableComponents,
+							UnrecordedUnconditionalPurchaseObligationPurchases,
+							UnrecordedUnconditionalPurchaseObligationImputedInterest,
+							)
 
 constant $UUPO_LEASE_MEMBERS = set(OperatingLeaseLeaseNotYetCommencedMember, FinancingLeaseLeaseNotYetCommencedMember)
 
