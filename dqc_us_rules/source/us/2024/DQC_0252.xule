@@ -174,7 +174,7 @@ for $cube in soi_statement_cubes(OpenForwardForeignCurrencyContractTable)
 	$cubeFacts = list({covered @cube = $cube})
 	$investmentIdentifierFacts = list({covered @OpenForwardForeignCurrencyContractIdentifierAxis=*}).length == 0
 
-	$cubeFacts.length > 0 and OpenForwardForeignCurrencyContractIdentifierAxis not in $cubeDimensions
+	$cubeFacts.length > 0 and OpenForwardForeignCurrencyContractIdentifierAxis not in $cubeDimensions and $investmentIdentifierFacts
 
 message
 "The schedule of open forward foreign currency contracts in the section \"{$cube.drs-role.description}\" uses the OpenForwardForeignCurrencyContractTable with the following axes: {$cubeDimensions.sort.join(', ')}.  This table does not include the OpenForwardForeignCurrencyContractIdentifierAxis.  Each open forward foreign currency contract should be identified using a member on the OpenForwardForeignCurrencyContractIdentifierAxis so that the attributes of each individual contract can be identified. Please add the OpenForwardForeignCurrencyContractIdentifierAxis to the table and report each forward contract using a member on this axis. If the table reflects a different investment type change the table name to the appropriate table concept that is used with that investment type and dimension.
