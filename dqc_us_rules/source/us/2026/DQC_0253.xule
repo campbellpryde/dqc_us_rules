@@ -38,8 +38,9 @@ $scheduleIIICubes = filter taxonomy().cubes where $item.cube-concept.name == srt
 
 for $cube in $scheduleIIICubes
 	$incorrectAxes = $cube.dimensions.concept.name.to-set intersect $SCHEDULE_III_INCORRECT_AXES
+	$correctAxes = $cube.dimensions.concept.name.to-set intersect set(srt:RealEstateAndAccumulatedDepreciationDescriptionOfPropertyAxis)
 
-	$incorrectAxes.length > 0
+	$incorrectAxes.length > 0 and $correctAxes.length == 0
 
 message
 "The Schedule III table srt:RealEstateAndAccumulatedDepreciationByPropertyTable in the section \"{$cube.drs-role.description}\" includes the axis {$incorrectAxes.sort.join(', ')}.  This axis should not be used to identify properties reported in Schedule III Real Estate and Accumulated Depreciation.  The appropriate axis to identify each property in this schedule is srt:RealEstateAndAccumulatedDepreciationDescriptionOfPropertyAxis.  When needed, the type of property can be identified using the srt:MortgageLoansOnRealEstateDescriptionTypeOfPropertyAxis and the location of the property can be identified using srt:StatementGeographicalAxis.  Please replace the axis {$incorrectAxes.sort.join(', ')} with the appropriate axis.

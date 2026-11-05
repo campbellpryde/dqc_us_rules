@@ -41,7 +41,7 @@ constant $UUPO_CONCEPTS = set(UnrecordedUnconditionalPurchaseObligationBalanceSh
 							UnrecordedUnconditionalPurchaseObligationImputedInterest,
 							)
 
-constant $UUPO_LEASE_MEMBERS = set(OperatingLeaseLeaseNotYetCommencedMember, FinancingLeaseLeaseNotYetCommencedMember)
+constant $UUPO_LEASE_MEMBERS = set(OperatingLeaseLeaseNotYetCommencedMember, FinancingLeaseLeaseNotYetCommencedMember) + set(qname($EXTENSION_NS, 'OperatingAndFinancingLeaseLeaseNotYetCommencedMember'))
 
 
 Assert US.0251.10964 satisfied
@@ -68,7 +68,7 @@ $leasePairs = list(for $axis in $factDimensions.keys
 $leasePairs.length > 0
 
 message
-"The filer has reported a value of {$fact1} for the concept {$fact1.concept.name} with the following lease related axis and member combination(s): {$leasePairs.join(', ')}. When an unrecorded unconditional purchase obligation represents a lease that has not yet commenced the lease should be identified using the axis UnrecordedUnconditionalPurchaseObligationByCategoryOfItemPurchasedAxis with the member OperatingLeaseLeaseNotYetCommencedMember or FinancingLeaseLeaseNotYetCommencedMember.  Please update the dimensional qualification of this fact to use the UnrecordedUnconditionalPurchaseObligationByCategoryOfItemPurchasedAxis.
+"The filer has reported a value of {$fact1} for the concept {$fact1.concept.name} with the following lease related axis and member combination(s): {$leasePairs.join(', ')}. When an unrecorded unconditional purchase obligation represents a lease that has not yet commenced the lease should be identified using the axis UnrecordedUnconditionalPurchaseObligationByCategoryOfItemPurchasedAxis with the member OperatingLeaseLeaseNotYetCommencedMember or FinancingLeaseLeaseNotYetCommencedMember or an extension of OperatingAndFinancingLeaseLeaseNotYetCommencedMember.  Please update the dimensional qualification of this fact to use the UnrecordedUnconditionalPurchaseObligationByCategoryOfItemPurchasedAxis.
 
 Concept : {$fact1.concept.name}
 Value : {$fact1}
@@ -99,7 +99,7 @@ $member = $fact1.dimension(UnrecordedUnconditionalPurchaseObligationByCategoryOf
 is_lease_member($member.name) and $member.name not in $UUPO_LEASE_MEMBERS and is_extension($member, $ALL_BASE_TAXONOMIES_ELTS)
 
 message
-"The filer has reported a value of {$fact1} for the concept {$fact1.concept.name} using the extension member {$member.name} on the axis UnrecordedUnconditionalPurchaseObligationByCategoryOfItemPurchasedAxis.  The US GAAP taxonomy includes the members OperatingLeaseLeaseNotYetCommencedMember and FinancingLeaseLeaseNotYetCommencedMember to represent leases that have not yet commenced.  The extension member {$member.name} should be replaced with the appropriate standard member.
+"The filer has reported a value of {$fact1} for the concept {$fact1.concept.name} using the extension member {$member.name} on the axis UnrecordedUnconditionalPurchaseObligationByCategoryOfItemPurchasedAxis.  The US GAAP taxonomy includes the members OperatingLeaseLeaseNotYetCommencedMember and FinancingLeaseLeaseNotYetCommencedMember to represent leases that have not yet commenced. If these are combined into a single total the extension member OperatingAndFinancingLeaseLeaseNotYetCommencedMember should be used.  The extension member {$member.name} should be replaced with the appropriate standard or extension member.
 
 Concept : {$fact1.concept.name}
 Value : {$fact1}
@@ -125,10 +125,12 @@ else
 
 $fact1 = {@concept not in $UUPO_CONCEPTS @UnrecordedUnconditionalPurchaseObligationByCategoryOfItemPurchasedAxis in $UUPO_LEASE_MEMBERS}
 
-$fact1.concept.is-numeric
+$Fact2 = {@concept in $UUPO_CONCEPTS @UnrecordedUnconditionalPurchaseObligationByCategoryOfItemPurchasedAxis in $UUPO_LEASE_MEMBERS}
+
+exists($fact1) and missing($Fact2)
 
 message
-"The filer has reported a value of {$fact1} for the concept {$fact1.concept.name} with the member {$fact1.dimension(UnrecordedUnconditionalPurchaseObligationByCategoryOfItemPurchasedAxis).name} on the axis UnrecordedUnconditionalPurchaseObligationByCategoryOfItemPurchasedAxis.  The members OperatingLeaseLeaseNotYetCommencedMember and FinancingLeaseLeaseNotYetCommencedMember are intended to be used with the unrecorded unconditional purchase obligation elements such as UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount to report the amount of a lease that has not yet commenced. The concept {$fact1.concept.name} should not be used with this axis and member. If the fact represents the amount of a lease that has not commenced use the element UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount or the related maturity elements.
+"The filer has reported a value of {$fact1} for the concept {$fact1.concept.name} with the member {$fact1.dimension(UnrecordedUnconditionalPurchaseObligationByCategoryOfItemPurchasedAxis).name} on the axis UnrecordedUnconditionalPurchaseObligationByCategoryOfItemPurchasedAxis.  The filer has not reported a value for UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount for this lease. The members OperatingLeaseLeaseNotYetCommencedMember and FinancingLeaseLeaseNotYetCommencedMember are intended to be used with the unrecorded unconditional purchase obligation elements such as UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount to report the amount of a lease that has not yet commenced. The concept {$fact1.concept.name} should not be used with this axis and member. If the fact represents the amount of a lease that has not commenced use the element UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount or the related maturity elements.
 
 Concept : {$fact1.concept.name}
 Value : {$fact1}
