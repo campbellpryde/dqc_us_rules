@@ -113,8 +113,14 @@ $totalForfeituresAndExpirations = if exists($forfeituresAndExpirations)
 if $opening == none or $closing == none
 	skip
 else
+
+	$minDecimals = min(list(for $x in list($opening, $grants, $exercises, $forfeituresAndExpirations, $forfeitures, $expirations, $other, $closing)
+								if $x == none 
+									skip
+								else
+									$x.decimals));
 	$expectedClosing = $opening + $grants - first-value($exercises, 0) - $totalForfeituresAndExpirations + first-value($other, 0);
-	tolerance_for_decimals($closing, $expectedClosing, 2)
+	tolerance_for_decimals_comp($closing, $expectedClosing, $minDecimals, 2)
 
 message
 "The share option roll forward does not calculate. The number of options outstanding at the start of the period plus options granted, less options exercised, less options forfeited and expired, plus other increases (decreases) should equal the number of options outstanding at the end of the period.
@@ -128,6 +134,8 @@ Expected options outstanding : {$expectedClosing}
 Reported options outstanding at {$closing.period} : {$closing}
 
 The rule uses the following elements: ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingNumber, ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsGrantsInPeriodGross, StockIssuedDuringPeriodSharesStockOptionsExercised, ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsForfeituresAndExpirationsInPeriod (or ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsForfeituresInPeriod and ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExpirationsInPeriod) and ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOtherIncreasesDecreasesInPeriod.  Please check that the values are correct, are reported with the correct sign, and that the facts are reported with the same dimensions.
+
+Values are compared assuming all values have a decimal value of {$minDecimals} to account for rounding and precision differences across the filing.
 
 Dimensions : {$grants.dimensions.join(', ','=')}
 
@@ -159,8 +167,14 @@ $forfeited = [nonils @concept = ShareBasedCompensationArrangementByShareBasedPay
 if $opening == none or $closing == none
 	skip
 else
+	$minDecimals = min(list(for $x in list($opening, $grants, $vested, $forfeited, $closing)
+								if $x == none 
+									skip
+								else
+									$x.decimals));
+
 	$expectedClosing = $opening + $grants - first-value($vested, 0) - first-value($forfeited, 0);
-	tolerance_for_decimals($closing, $expectedClosing, 2)
+	tolerance_for_decimals_comp($closing, $expectedClosing, $minDecimals, 2)
 
 message
 "The roll forward of nonvested equity instruments other than options does not calculate. The number of nonvested instruments at the start of the period plus instruments granted, less instruments vested, less instruments forfeited should equal the number of nonvested instruments at the end of the period.
