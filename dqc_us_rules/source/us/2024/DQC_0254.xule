@@ -48,15 +48,35 @@ for $network in $SCHEDULE_III_NETWORKS.sort
 							and is_extension($item, $ALL_BASE_TAXONOMIES_ELTS)
 							returns $item.name
 
+	$RequiredConcepts = set(srt:RealEstateAndAccumulatedDepreciationAmountOfEncumbrances, 	
+							RealEstateAndAccumulatedDepreciationInitialCostOfLand,RealEstateAndAccumulatedDepreciationInitialCostOfBuildingsAndImprovements,
+							RealEstateAndAccumulatedDepreciationCarryingAmountOfLand,
+							RealEstateAndAccumulatedDepreciationCarryingAmountOfBuildingsAndImprovements,
+							RealEstateGrossAtCarryingValue,
+							RealEstateAccumulatedDepreciation
+							)
+
+    $AllConceptsInCube = filter $network.concepts
+							where not $item.is-abstract
+							and $item.substitution == xbrli:item
+							and not is_extension($item, $ALL_BASE_TAXONOMIES_ELTS)
+							returns $item.name
+
+	$missingConcepts = set($RequiredConcepts - $AllConceptsInCube)
+
 	/** Only report the extension elements that have facts in the filing **/
 	$usedExtensionLineItems = filter $extensionLineItems where list({covered @concept = $item}).length > 0
 
-	$usedExtensionLineItems.length > 0
+	$usedExtensionLineItems.length > 0 and $missingConcepts.length > 0
 
 message
 "The Schedule III Real Estate and Accumulated Depreciation section \"{$network.role.description}\" uses the following extension element(s):
 
-{$usedExtensionLineItems.sort.join('\n')}
+{$usedExtensionLineItems.sort.join('\n')},
+
+But does not report the required concept(s):
+
+{$missingConcepts.sort.join('\n')}
 
 The US GAAP taxonomy includes elements for each of the columns required in Schedule III such as encumbrances (srt:RealEstateAndAccumulatedDepreciationAmountOfEncumbrances), the initial cost of land and buildings, costs capitalized subsequent to acquisition, the gross amount at which land, buildings and improvements are carried, accumulated depreciation, date of construction, date acquired and depreciable life, as well as the elements used to reconcile the real estate and accumulated depreciation balances. Custom elements should not be needed to tag Schedule III. Please replace the extension element(s) with the appropriate US GAAP or SRT taxonomy element.
 
