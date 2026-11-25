@@ -1,0 +1,2004 @@
+{
+    "http://xbrl.sec.gov/country/2027": [
+        {
+            "localName": "ST",
+            "type": "Concept",
+            "label": "SAO TOME AND PRINCIPE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "IM",
+            "type": "Concept",
+            "label": "ISLE OF MAN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GM",
+            "type": "Concept",
+            "label": "GAMBIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MD",
+            "type": "Concept",
+            "label": "MOLDOVA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BA",
+            "type": "Concept",
+            "label": "BOSNIA AND HERZEGOVINA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GG",
+            "type": "Concept",
+            "label": "GUERNSEY",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SE",
+            "type": "Concept",
+            "label": "SWEDEN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CR",
+            "type": "Concept",
+            "label": "COSTA RICA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MG",
+            "type": "Concept",
+            "label": "MADAGASCAR",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "KN",
+            "type": "Concept",
+            "label": "SAINT KITTS AND NEVIS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "PR",
+            "type": "Concept",
+            "label": "PUERTO RICO",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CV",
+            "type": "Concept",
+            "label": "CABO VERDE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "KW",
+            "type": "Concept",
+            "label": "KUWAIT",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EG",
+            "type": "Concept",
+            "label": "EGYPT",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BD",
+            "type": "Concept",
+            "label": "BANGLADESH",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CY",
+            "type": "Concept",
+            "label": "CYPRUS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "IQ",
+            "type": "Concept",
+            "label": "IRAQ",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "IS",
+            "type": "Concept",
+            "label": "ICELAND",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GH",
+            "type": "Concept",
+            "label": "GHANA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SA",
+            "type": "Concept",
+            "label": "SAUDI ARABIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SB",
+            "type": "Concept",
+            "label": "SOLOMON ISLANDS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "LR",
+            "type": "Concept",
+            "label": "LIBERIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SJ",
+            "type": "Concept",
+            "label": "SVALBARD AND JAN MAYEN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "UM",
+            "type": "Concept",
+            "label": "UNITED STATES MINOR OUTLYING ISLANDS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "AZ",
+            "type": "Concept",
+            "label": "AZERBAIJAN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GW",
+            "type": "Concept",
+            "label": "GUINEA-BISSAU",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MA",
+            "type": "Concept",
+            "label": "MOROCCO",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "DE",
+            "type": "Concept",
+            "label": "GERMANY",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "NF",
+            "type": "Concept",
+            "label": "NORFOLK ISLAND",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "TT",
+            "type": "Concept",
+            "label": "TRINIDAD AND TOBAGO",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CD",
+            "type": "Concept",
+            "label": "CONGO, THE DEMOCRATIC REPUBLIC OF THE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "KR",
+            "type": "Concept",
+            "label": "KOREA, REPUBLIC OF",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CI",
+            "type": "Concept",
+            "label": "C\u00d4TE D'IVOIRE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "AL",
+            "type": "Concept",
+            "label": "ALBANIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "KY",
+            "type": "Concept",
+            "label": "CAYMAN ISLANDS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "ZA",
+            "type": "Concept",
+            "label": "SOUTH AFRICA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BS",
+            "type": "Concept",
+            "label": "BAHAMAS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MO",
+            "type": "Concept",
+            "label": "MACAO",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "YE",
+            "type": "Concept",
+            "label": "YEMEN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "IE",
+            "type": "Concept",
+            "label": "IRELAND",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "JP",
+            "type": "Concept",
+            "label": "JAPAN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "VU",
+            "type": "Concept",
+            "label": "VANUATU",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MY",
+            "type": "Concept",
+            "label": "MALAYSIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "PS",
+            "type": "Concept",
+            "label": "PALESTINIAN TERRITORY, OCCUPIED",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "PT",
+            "type": "Concept",
+            "label": "PORTUGAL",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "ZW",
+            "type": "Concept",
+            "label": "ZIMBABWE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "IR",
+            "type": "Concept",
+            "label": "IRAN, ISLAMIC REPUBLIC OF",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BM",
+            "type": "Concept",
+            "label": "BERMUDA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "LT",
+            "type": "Concept",
+            "label": "LITHUANIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "IN",
+            "type": "Concept",
+            "label": "INDIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BE",
+            "type": "Concept",
+            "label": "BELGIUM",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MZ",
+            "type": "Concept",
+            "label": "MOZAMBIQUE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BB",
+            "type": "Concept",
+            "label": "BARBADOS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "TN",
+            "type": "Concept",
+            "label": "TUNISIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GN",
+            "type": "Concept",
+            "label": "GUINEA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CN",
+            "type": "Concept",
+            "label": "CHINA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "FK",
+            "type": "Concept",
+            "label": "FALKLAND ISLANDS (MALVINAS)",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "FJ",
+            "type": "Concept",
+            "label": "FIJI",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "NZ",
+            "type": "Concept",
+            "label": "NEW ZEALAND",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "RE",
+            "type": "Concept",
+            "label": "R\u00c9UNION",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "PH",
+            "type": "Concept",
+            "label": "PHILIPPINES",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GF",
+            "type": "Concept",
+            "label": "FRENCH GUIANA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "JM",
+            "type": "Concept",
+            "label": "JAMAICA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BR",
+            "type": "Concept",
+            "label": "BRAZIL",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GY",
+            "type": "Concept",
+            "label": "GUYANA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CH",
+            "type": "Concept",
+            "label": "SWITZERLAND",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "ID",
+            "type": "Concept",
+            "label": "INDONESIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "LA",
+            "type": "Concept",
+            "label": "LAOS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "VE",
+            "type": "Concept",
+            "label": "VENEZUELA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MW",
+            "type": "Concept",
+            "label": "MALAWI",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "LY",
+            "type": "Concept",
+            "label": "LIBYA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BH",
+            "type": "Concept",
+            "label": "BAHRAIN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "RW",
+            "type": "Concept",
+            "label": "RWANDA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MT",
+            "type": "Concept",
+            "label": "MALTA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "LS",
+            "type": "Concept",
+            "label": "LESOTHO",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "KZ",
+            "type": "Concept",
+            "label": "KAZAKHSTAN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "NR",
+            "type": "Concept",
+            "label": "NAURU",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BW",
+            "type": "Concept",
+            "label": "BOTSWANA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "AllCountriesDomain",
+            "type": "Concept",
+            "label": "All Countries [Domain]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "HN",
+            "type": "Concept",
+            "label": "HONDURAS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CW",
+            "type": "Concept",
+            "label": "CURA\u00c7AO",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "TG",
+            "type": "Concept",
+            "label": "TOGO",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "FI",
+            "type": "Concept",
+            "label": "FINLAND",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "AT",
+            "type": "Concept",
+            "label": "AUSTRIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "AX",
+            "type": "Concept",
+            "label": "\u00c5LAND ISLANDS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GE",
+            "type": "Concept",
+            "label": "GEORGIA, REPUBLIC OF",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "NL",
+            "type": "Concept",
+            "label": "NETHERLANDS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MF",
+            "type": "Concept",
+            "label": "SAINT MARTIN (FRENCH PART)",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GR",
+            "type": "Concept",
+            "label": "GREECE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "ME",
+            "type": "Concept",
+            "label": "MONTENEGRO",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "FO",
+            "type": "Concept",
+            "label": "FAROE ISLANDS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "DO",
+            "type": "Concept",
+            "label": "DOMINICAN REPUBLIC",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "VA",
+            "type": "Concept",
+            "label": "HOLY SEE (THE)",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "TL",
+            "type": "Concept",
+            "label": "TIMOR-LESTE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "AG",
+            "type": "Concept",
+            "label": "ANTIGUA AND BARBUDA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CK",
+            "type": "Concept",
+            "label": "COOK ISLANDS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MN",
+            "type": "Concept",
+            "label": "MONGOLIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "RO",
+            "type": "Concept",
+            "label": "ROMANIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "KI",
+            "type": "Concept",
+            "label": "KIRIBATI",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "RS",
+            "type": "Concept",
+            "label": "SERBIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "WF",
+            "type": "Concept",
+            "label": "WALLIS AND FUTUNA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "IT",
+            "type": "Concept",
+            "label": "ITALY",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "VI",
+            "type": "Concept",
+            "label": "VIRGIN ISLANDS, US",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "US",
+            "type": "Concept",
+            "label": "UNITED STATES",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SK",
+            "type": "Concept",
+            "label": "SLOVAKIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GT",
+            "type": "Concept",
+            "label": "GUATEMALA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BT",
+            "type": "Concept",
+            "label": "BHUTAN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CG",
+            "type": "Concept",
+            "label": "CONGO",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "TF",
+            "type": "Concept",
+            "label": "FRENCH SOUTHERN TERRITORIES",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "LU",
+            "type": "Concept",
+            "label": "LUXEMBOURG",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GI",
+            "type": "Concept",
+            "label": "GIBRALTAR",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SC",
+            "type": "Concept",
+            "label": "SEYCHELLES",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SR",
+            "type": "Concept",
+            "label": "SURINAME",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "HM",
+            "type": "Concept",
+            "label": "HEARD ISLAND AND MCDONALD ISLANDS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "AM",
+            "type": "Concept",
+            "label": "ARMENIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SO",
+            "type": "Concept",
+            "label": "SOMALIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "AE",
+            "type": "Concept",
+            "label": "UNITED ARAB EMIRATES",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EE",
+            "type": "Concept",
+            "label": "ESTONIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CZ",
+            "type": "Concept",
+            "label": "CZECHIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "LV",
+            "type": "Concept",
+            "label": "LATVIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "AD",
+            "type": "Concept",
+            "label": "ANDORRA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CU",
+            "type": "Concept",
+            "label": "CUBA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "TK",
+            "type": "Concept",
+            "label": "TOKELAU",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BO",
+            "type": "Concept",
+            "label": "BOLIVIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "VN",
+            "type": "Concept",
+            "label": "VIET NAM",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "LC",
+            "type": "Concept",
+            "label": "SAINT LUCIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "TZ",
+            "type": "Concept",
+            "label": "TANZANIA, UNITED REPUBLIC OF",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "ET",
+            "type": "Concept",
+            "label": "ETHIOPIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BV",
+            "type": "Concept",
+            "label": "BOUVET ISLAND",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MX",
+            "type": "Concept",
+            "label": "MEXICO",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CL",
+            "type": "Concept",
+            "label": "CHILE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "DJ",
+            "type": "Concept",
+            "label": "DJIBOUTI",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GQ",
+            "type": "Concept",
+            "label": "EQUATORIAL GUINEA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "PW",
+            "type": "Concept",
+            "label": "PALAU",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "PE",
+            "type": "Concept",
+            "label": "PERU",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "ZM",
+            "type": "Concept",
+            "label": "ZAMBIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "FM",
+            "type": "Concept",
+            "label": "MICRONESIA, FEDERATED STATES OF",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "FR",
+            "type": "Concept",
+            "label": "FRANCE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CC",
+            "type": "Concept",
+            "label": "COCOS (KEELING) ISLANDS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SN",
+            "type": "Concept",
+            "label": "SENEGAL",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MS",
+            "type": "Concept",
+            "label": "MONTSERRAT",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "VG",
+            "type": "Concept",
+            "label": "VIRGIN ISLANDS, BRITISH",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CM",
+            "type": "Concept",
+            "label": "CAMEROON",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "QA",
+            "type": "Concept",
+            "label": "QATAR",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "UA",
+            "type": "Concept",
+            "label": "UKRAINE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "PA",
+            "type": "Concept",
+            "label": "PANAMA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SG",
+            "type": "Concept",
+            "label": "SINGAPORE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "TH",
+            "type": "Concept",
+            "label": "THAILAND",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "IO",
+            "type": "Concept",
+            "label": "BRITISH INDIAN OCEAN TERRITORY",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "UY",
+            "type": "Concept",
+            "label": "URUGUAY",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "UG",
+            "type": "Concept",
+            "label": "UGANDA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "WS",
+            "type": "Concept",
+            "label": "SAMOA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GP",
+            "type": "Concept",
+            "label": "GUADELOUPE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "IL",
+            "type": "Concept",
+            "label": "ISRAEL",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EH",
+            "type": "Concept",
+            "label": "WESTERN SAHARA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MC",
+            "type": "Concept",
+            "label": "MONACO",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SX",
+            "type": "Concept",
+            "label": "SINT MAARTEN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "VC",
+            "type": "Concept",
+            "label": "SAINT VINCENT AND THE GRENADINES",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CF",
+            "type": "Concept",
+            "label": "CENTRAL AFRICAN REPUBLIC",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GL",
+            "type": "Concept",
+            "label": "GREENLAND",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "AI",
+            "type": "Concept",
+            "label": "ANGUILLA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CA",
+            "type": "Concept",
+            "label": "CANADA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MQ",
+            "type": "Concept",
+            "label": "MARTINIQUE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SI",
+            "type": "Concept",
+            "label": "SLOVENIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "TW",
+            "type": "Concept",
+            "label": "TAIWAN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "DM",
+            "type": "Concept",
+            "label": "DOMINICA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "NU",
+            "type": "Concept",
+            "label": "NIUE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "TR",
+            "type": "Concept",
+            "label": "T\u00dcRKIYE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "AS",
+            "type": "Concept",
+            "label": "AMERICAN SAMOA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GB",
+            "type": "Concept",
+            "label": "UNITED KINGDOM",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BI",
+            "type": "Concept",
+            "label": "BURUNDI",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BQ",
+            "type": "Concept",
+            "label": "BONAIRE, SINT EUSTATIUS AND SABA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "OM",
+            "type": "Concept",
+            "label": "OMAN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BZ",
+            "type": "Concept",
+            "label": "BELIZE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "PN",
+            "type": "Concept",
+            "label": "PITCAIRN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "JE",
+            "type": "Concept",
+            "label": "JERSEY",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SS",
+            "type": "Concept",
+            "label": "SOUTH SUDAN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "TM",
+            "type": "Concept",
+            "label": "TURKMENISTAN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BN",
+            "type": "Concept",
+            "label": "BRUNEI DARUSSALAM",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GA",
+            "type": "Concept",
+            "label": "GABON",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SZ",
+            "type": "Concept",
+            "label": "ESWATINI",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MK",
+            "type": "Concept",
+            "label": "NORTH MACEDONIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "RU",
+            "type": "Concept",
+            "label": "RUSSIAN FEDERATION",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "DZ",
+            "type": "Concept",
+            "label": "ALGERIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "TV",
+            "type": "Concept",
+            "label": "TUVALU",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SD",
+            "type": "Concept",
+            "label": "SUDAN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MH",
+            "type": "Concept",
+            "label": "MARSHALL ISLANDS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BL",
+            "type": "Concept",
+            "label": "SAINT BARTH\u00c9LEMY",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CO",
+            "type": "Concept",
+            "label": "COLOMBIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MR",
+            "type": "Concept",
+            "label": "MAURITANIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GD",
+            "type": "Concept",
+            "label": "GRENADA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "PK",
+            "type": "Concept",
+            "label": "PAKISTAN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "TO",
+            "type": "Concept",
+            "label": "TONGA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "HT",
+            "type": "Concept",
+            "label": "HAITI",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "HU",
+            "type": "Concept",
+            "label": "HUNGARY",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "AR",
+            "type": "Concept",
+            "label": "ARGENTINA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "JO",
+            "type": "Concept",
+            "label": "JORDAN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MU",
+            "type": "Concept",
+            "label": "MAURITIUS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GU",
+            "type": "Concept",
+            "label": "GUAM",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "AF",
+            "type": "Concept",
+            "label": "AFGHANISTAN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "NI",
+            "type": "Concept",
+            "label": "NICARAGUA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "AO",
+            "type": "Concept",
+            "label": "ANGOLA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "PM",
+            "type": "Concept",
+            "label": "SAINT PIERRE AND MIQUELON",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "PF",
+            "type": "Concept",
+            "label": "FRENCH POLYNESIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "PY",
+            "type": "Concept",
+            "label": "PARAGUAY",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "TJ",
+            "type": "Concept",
+            "label": "TAJIKISTAN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "UZ",
+            "type": "Concept",
+            "label": "UZBEKISTAN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CX",
+            "type": "Concept",
+            "label": "CHRISTMAS ISLAND",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "HR",
+            "type": "Concept",
+            "label": "CROATIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SH",
+            "type": "Concept",
+            "label": "SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "AU",
+            "type": "Concept",
+            "label": "AUSTRALIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "NG",
+            "type": "Concept",
+            "label": "NIGERIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "NP",
+            "type": "Concept",
+            "label": "NEPAL",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BF",
+            "type": "Concept",
+            "label": "BURKINA FASO",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "GS",
+            "type": "Concept",
+            "label": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "LK",
+            "type": "Concept",
+            "label": "SRI LANKA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "KM",
+            "type": "Concept",
+            "label": "COMOROS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "NC",
+            "type": "Concept",
+            "label": "NEW CALEDONIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BG",
+            "type": "Concept",
+            "label": "BULGARIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "AW",
+            "type": "Concept",
+            "label": "ARUBA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SY",
+            "type": "Concept",
+            "label": "SYRIAN ARAB REPUBLIC",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "HK",
+            "type": "Concept",
+            "label": "HONG KONG",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "YT",
+            "type": "Concept",
+            "label": "MAYOTTE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "KE",
+            "type": "Concept",
+            "label": "KENYA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "ER",
+            "type": "Concept",
+            "label": "ERITREA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MM",
+            "type": "Concept",
+            "label": "MYANMAR",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "NO",
+            "type": "Concept",
+            "label": "NORWAY",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BJ",
+            "type": "Concept",
+            "label": "BENIN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "BY",
+            "type": "Concept",
+            "label": "BELARUS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "KP",
+            "type": "Concept",
+            "label": "KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MV",
+            "type": "Concept",
+            "label": "MALDIVES",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "PG",
+            "type": "Concept",
+            "label": "PAPUA NEW GUINEA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "ES",
+            "type": "Concept",
+            "label": "SPAIN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "MP",
+            "type": "Concept",
+            "label": "NORTHERN MARIANA ISLANDS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "DK",
+            "type": "Concept",
+            "label": "DENMARK",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EC",
+            "type": "Concept",
+            "label": "ECUADOR",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "TD",
+            "type": "Concept",
+            "label": "CHAD",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "ML",
+            "type": "Concept",
+            "label": "MALI",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "NA",
+            "type": "Concept",
+            "label": "NAMIBIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SL",
+            "type": "Concept",
+            "label": "SIERRA LEONE",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "TC",
+            "type": "Concept",
+            "label": "TURKS AND CAICOS ISLANDS",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "KG",
+            "type": "Concept",
+            "label": "KYRGYZSTAN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "LI",
+            "type": "Concept",
+            "label": "LIECHTENSTEIN",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "AQ",
+            "type": "Concept",
+            "label": "ANTARCTICA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "LB",
+            "type": "Concept",
+            "label": "LEBANON",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "KH",
+            "type": "Concept",
+            "label": "CAMBODIA",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "NE",
+            "type": "Concept",
+            "label": "NIGER",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SV",
+            "type": "Concept",
+            "label": "EL SALVADOR",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "SM",
+            "type": "Concept",
+            "label": "SAN MARINO",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "PL",
+            "type": "Concept",
+            "label": "POLAND",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        }
+    ]
+}

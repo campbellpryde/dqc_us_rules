@@ -1,0 +1,116 @@
+{
+    "http://fasb.org/tin-part/2027": [
+        {
+            "localName": "Source",
+            "type": "Reference",
+            "label": "Source",
+            "isAbstract": "false",
+            "dataType": "string"
+        },
+        {
+            "localName": "SourceName",
+            "type": "Reference",
+            "label": "SourceName",
+            "isAbstract": "false",
+            "dataType": "string"
+        },
+        {
+            "localName": "URI",
+            "type": "Reference",
+            "label": "URI",
+            "isAbstract": "false",
+            "dataType": "anyURI"
+        },
+        {
+            "localName": "Source_ASU_Number",
+            "type": "Reference",
+            "label": "Source_ASU_Number",
+            "isAbstract": "false",
+            "dataType": "tin-part:AsuNumber"
+        },
+        {
+            "localName": "pdfURI",
+            "type": "Reference",
+            "label": "pdfURI",
+            "isAbstract": "false",
+            "dataType": "anyURI"
+        },
+        {
+            "localName": "Note",
+            "type": "Reference",
+            "label": "Note",
+            "isAbstract": "false",
+            "dataType": "string"
+        },
+        {
+            "localName": "AlternateElement",
+            "type": "Reference",
+            "label": "AlternateElement",
+            "isAbstract": "false",
+            "dataType": "tin-part:elementListItemType"
+        },
+        {
+            "localName": "inlineURI",
+            "type": "Reference",
+            "label": "inlineURI",
+            "isAbstract": "false",
+            "dataType": "anyURI"
+        },
+        {
+            "localName": "Negative_XBRL_Value",
+            "type": "Reference",
+            "label": "Negative_XBRL_Value",
+            "isAbstract": "false",
+            "dataType": "string"
+        },
+        {
+            "localName": "SourceVersion",
+            "type": "Reference",
+            "label": "SourceVersion",
+            "isAbstract": "false",
+            "dataType": "decimal"
+        },
+        {
+            "localName": "Positive_XBRL_Value",
+            "type": "Reference",
+            "label": "Positive_XBRL_Value",
+            "isAbstract": "false",
+            "dataType": "string"
+        },
+        {
+            "localName": "TinModificationDescription",
+            "type": "Reference",
+            "label": "TinModificationDescription",
+            "isAbstract": "false",
+            "dataType": "string"
+        },
+        {
+            "localName": "AlternateElementForPeriodsPriorToAdoption",
+            "type": "Reference",
+            "label": "AlternateElementForPeriodsPriorToAdoption",
+            "isAbstract": "false",
+            "dataType": "tin-part:elementListItemType"
+        },
+        {
+            "localName": "elementCreationTaxonomyVersion",
+            "type": "Reference",
+            "label": "elementCreationTaxonomyVersion",
+            "isAbstract": "false",
+            "dataType": "gYear"
+        },
+        {
+            "localName": "TransitionOption",
+            "type": "Reference",
+            "label": "TransitionOption",
+            "isAbstract": "false",
+            "dataType": "tin-part:TransitionOptionList"
+        },
+        {
+            "localName": "AlternateElementForPeriodOfAndAfterAdoption",
+            "type": "Reference",
+            "label": "AlternateElementForPeriodOfAndAfterAdoption",
+            "isAbstract": "false",
+            "dataType": "tin-part:elementListItemType"
+        }
+    ]
+}

@@ -1,0 +1,4102 @@
+{
+    "http://fasb.org/us-gaap-ebp/2027": [
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseForDividendIncomeOnInvestment",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase from Dividend Income on Investment",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfReportableTransactionTable",
+            "type": "Concept",
+            "label": "EBP, Schedule of Reportable Transaction [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentIncomeReceivable",
+            "type": "Concept",
+            "label": "EBP, Investment Income, Receivable",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionNetIncomeLoss",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Net Income (Loss)",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpDerivativeAssetSubjectToMasterNettingArrangementAfterOffset",
+            "type": "Concept",
+            "label": "EBP, Derivative Asset, Subject to Master Netting Arrangement, after Offset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDebtTableTextBlock",
+            "type": "Concept",
+            "label": "EBP, Debt [Table Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReceivableInvestmentSale",
+            "type": "Concept",
+            "label": "EBP, Investment Sale, Receivable",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentIssuerNameExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Investment, Issuer Name [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeLiabilitySubjectToMasterNettingArrangementAssetOffset",
+            "type": "Concept",
+            "label": "EBP, Derivative Liability, Subject to Master Netting Arrangement, Asset Offset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentValuationTechniqueExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Investment, Valuation Technique [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForfeitedNonvestedAccountReallocatedToParticipant",
+            "type": "Concept",
+            "label": "EBP, Forfeited Nonvested Account, Reallocated to Participant",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentEmployerCommonStockToTotalAssetPercentage",
+            "type": "Concept",
+            "label": "EBP, Investment, Employer, Common Stock, to Total Asset, Percentage",
+            "isAbstract": "false",
+            "dataType": "dtr-types:percentItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EbpInvestmentLevel3ReconciliationIncreaseDecreaseFromGainLossAbstract",
+            "type": "Concept",
+            "label": "EBP, Investment, Level 3 Reconciliation, Increase (Decrease) from Gain (Loss) [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeAssetSubjectToMasterNettingArrangementBeforeOffset",
+            "type": "Concept",
+            "label": "EBP, Derivative Asset, Subject to Master Netting Arrangement, before Offset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseForParticipantContributionExcludingRollover",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase from Participant Contribution, Excluding Rollover",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanUnallocatedAssetPolicyTextBlock",
+            "type": "Concept",
+            "label": "EBP, Unallocated Asset [Policy Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAllocationStatusDomain",
+            "type": "Concept",
+            "label": "EBP, Allocation Status [Domain]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeCreditRiskContingentFeatureDescription",
+            "type": "Concept",
+            "label": "EBP, Derivative, Credit Risk, Contingent Feature, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeLiabilitySubjectToMasterNettingArrangementCollateralRightToReclaimSecurityNotOffset",
+            "type": "Concept",
+            "label": "EBP, Derivative Liability, Subject to Master Netting Arrangement, Collateral, Right to Reclaim Security Not Offset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfReportableTransactionTableTextBlock",
+            "type": "Concept",
+            "label": "EBP, Schedule of Reportable Transaction [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDescriptionOfPlanTextBlock",
+            "type": "Concept",
+            "label": "EBP, Description of Plan [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDescriptionOfPlanLineItems",
+            "type": "Concept",
+            "label": "EBP, Description of Plan [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeCreditRiskContingentFeatureTriggeringCircumstanceDescription",
+            "type": "Concept",
+            "label": "EBP, Derivative, Credit Risk, Contingent Feature, Triggering Circumstance, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAllocationStatusAxis",
+            "type": "Concept",
+            "label": "EBP, Allocation Status [Axis]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanContributionPolicyTextBlock",
+            "type": "Concept",
+            "label": "EBP, Contribution [Policy Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfDelinquentParticipantContributionLateRepaymentIncluded",
+            "type": "Concept",
+            "label": "EBP, Schedule of Delinquent Participant Contribution, Late Repayment Included [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentPlanInterestInMasterTrustFairAndContractValue",
+            "type": "Concept",
+            "label": "EBP, Investment, Plan Interest in Master Trust, Fair and Contract Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanContributionParticipatingEmployerDomain",
+            "type": "Concept",
+            "label": "EBP, Contribution, Participating Employer [Domain]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanRelatedPartyAndPartyInInterestTransactionsTable",
+            "type": "Concept",
+            "label": "EBP, Related Party and Party-in-Interest Transactions [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeTableTextBlock",
+            "type": "Concept",
+            "label": "EBP, Derivative [Table Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentFairValueAbstract",
+            "type": "Concept",
+            "label": "EBP, Investment, Fair Value [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionTotalDividendIncome",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Earnings on Investments, Total Dividends",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanMasterTrustLineItems",
+            "type": "Concept",
+            "label": "EBP, Master Trust [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDescriptionAvailable",
+            "type": "Concept",
+            "label": "EBP, Description, Available [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentExcludingPlanInterestInMasterTrustCost",
+            "type": "Concept",
+            "label": "EBP, Investment, Excluding Plan Interest in Master Trust, Cost",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfAllocationIncomeAndChangeInPlanEquityTable",
+            "type": "Concept",
+            "label": "EBP, Schedule of Allocation, Income and Change in Plan Equity [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpInvestmentExcludingPlanInterestInMasterTrustContractValueTypeExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Investment, Excluding Plan Interest in Master Trust, Contract Value, Type [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNonparticipantDirectedInvestmentTable",
+            "type": "Concept",
+            "label": "EBP, Nonparticipant-Directed Investment [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanEmployerCommonStockClassAMember",
+            "type": "Concept",
+            "label": "EBP, Employer, Common Stock, Class A [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanRelatedPartyAndPartyInInterestTransactionsTableTextBlock",
+            "type": "Concept",
+            "label": "EBP, Related Party and Party-in-Interest Transactions [Table Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpContingencyTextBlock",
+            "type": "Concept",
+            "label": "EBP, Contingency [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNetAssetAvailableForBenefit",
+            "type": "Concept",
+            "label": "EBP, Net Asset Available for Benefit",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentAcquiredPlanInterestInMasterTrustPurchasePrice",
+            "type": "Concept",
+            "label": "EBP, Investment Acquired, Plan Interest in Master Trust, Purchase Price",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionPaymentToParticipant",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Benefit Payment and Payments to Provide Benefits",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDebtMaturityAbstract",
+            "type": "Concept",
+            "label": "EBP, Debt, Maturity [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReportableTransactionChangeInNetAssetAvailableForBenefitDecreaseForExpenseIncurred",
+            "type": "Concept",
+            "label": "EBP, Reportable Transaction, Change in Net Asset Available for Benefit, Decrease from Expense Incurred",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanSummaryOfAccountingPolicyTextBlock",
+            "type": "Concept",
+            "label": "EBP, Summary of Accounting Policy [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanErisaMinimumFundingRequirement",
+            "type": "Concept",
+            "label": "EBP, ERISA, Minimum Funding Requirement [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseForInterestAndDividendIncomeOnInvestmentAbstract",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase from Interest and Dividend Income on Investment [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanPaymentToParticipantPolicyTextBlock",
+            "type": "Concept",
+            "label": "EBP, Payment to Participant [Policy Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfDelinquentParticipantContributionCorrected",
+            "type": "Concept",
+            "label": "EBP, Schedule of Delinquent Participant Contribution, Corrected",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentExcludingPlanInterestInMasterTrustFairValue",
+            "type": "Concept",
+            "label": "EBP, Investment, Excluding Plan Interest in Master Trust, Fair Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAssetHeldForInvestmentParticipantLoanAfterDeemedDistribution",
+            "type": "Concept",
+            "label": "EBP, Asset Held for Investment, Participant Loan, after Deemed Distribution",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpDerivativeLiabilitySubjectToMasterNettingArrangementGrossAssetAndCollateralRightToReclaimCashOffsetAgainstDerivativeLiabilityAbstract",
+            "type": "Concept",
+            "label": "EBP, Derivative Liability, Subject to Master Netting Arrangement, Asset and Collateral, Right to Reclaim Cash, Offset [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanFullyBenefitResponsiveInvestmentContractAbstract",
+            "type": "Concept",
+            "label": "EBP, Fully Benefit-Responsive Investment Contract [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeLiabilityNotSubjectToMasterNettingArrangement",
+            "type": "Concept",
+            "label": "EBP, Derivative Liability, Not Subject to Master Netting Arrangement",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitDecreaseForAllocatedSharesForEsop",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Decrease from Shares Allocated for ESOP",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseForContributionAbstract",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase from Contribution [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpFairValueInvestmentNavRedemptionRestrictionLapseDate",
+            "type": "Concept",
+            "label": "EBP, Fair Value, Investment, NAV, Redemption Restriction, Lapse Date",
+            "isAbstract": "false",
+            "dataType": "xbrli:dateItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeAssetSubjectToMasterNettingArrangementAfterOffsetAbstract",
+            "type": "Concept",
+            "label": "EBP, Derivative Asset, Subject to Master Netting Arrangement, after Offset [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeLiabilityAbstract",
+            "type": "Concept",
+            "label": "EBP, Derivative Liability [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentPlanInterestInMasterTrustContractValue",
+            "type": "Concept",
+            "label": "EBP, Investment, Plan Interest in Master Trust, Contract Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseDecreaseForInvestmentIncomeLossAfterInvestmentExpense",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase (Decrease) from Investment Income (Loss), after Investment Expense",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionTotalExpense",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Total Expenses",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAssetHeldForInvestmentInvestmentExcludingPlanInterestInMasterTrustAllocationStatusExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Asset Held for Investment, Investment, Excluding Plan Interest in Master Trust, Allocation Status [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDescriptionOfPlanTable",
+            "type": "Concept",
+            "label": "EBP, Description of Plan [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpPlanName",
+            "type": "Concept",
+            "label": "EBP, Plan Name",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeLineItems",
+            "type": "Concept",
+            "label": "EBP, Derivative [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReceivable",
+            "type": "Concept",
+            "label": "EBP, Receivable",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfReportableTransactionAbstract",
+            "type": "Concept",
+            "label": "EBP, Schedule of Reportable Transaction [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionNetAssetAvailableForBenefitAbstract",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Net Assets [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfDelinquentParticipantContributionCorrectedOutsideVfcp",
+            "type": "Concept",
+            "label": "EBP, Schedule of Delinquent Participant Contribution, Corrected Outside VFCP",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentExcludingPlanInterestInMasterTrustContractValue",
+            "type": "Concept",
+            "label": "EBP, Investment, Excluding Plan Interest in Master Trust, Contract Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionPaymentToParticipantAbstract",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Benefit Payment and Payments to Provide Benefits [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNonconsolidatedMasterTrustAndPlanInterestInMasterTrustDomain",
+            "type": "Concept",
+            "label": "EBP, Nonconsolidated, Master Trust and Plan Interest in Master Trust [Domain]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanFullyBenefitResponsiveInvestmentContractTable",
+            "type": "Concept",
+            "label": "EBP, Fully Benefit-Responsive Investment Contract [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfReportableTransactionLineItems",
+            "type": "Concept",
+            "label": "EBP, Schedule of Reportable Transaction [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNonparticipantDirectedMember",
+            "type": "Concept",
+            "label": "EBP, Nonparticipant-Directed [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseDecreaseForInvestmentIncomeLossBeforeInvestmentExpenseAbstract",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase (Decrease) from Investment Income (Loss), before Investment Expense [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseForInterestIncomeOnNoteReceivableFromParticipant",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase from Interest Income on Note Receivable from Participant",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanRelatedPartyAndPartyInInterestAxis",
+            "type": "Concept",
+            "label": "EBP, Related Party and Party-in-Interest [Axis]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfDelinquentParticipantContributionAbstract",
+            "type": "Concept",
+            "label": "EBP, Schedule of Delinquent Participant Contribution [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanTaxStatusAbstract",
+            "type": "Concept",
+            "label": "EBP, Tax Status [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitDecreaseForAdministrativeExpense",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Decrease from Administrative Expense",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNoteReceivableFromParticipantAccountMaximumBorrowingAmount",
+            "type": "Concept",
+            "label": "EBP, Note Receivable from Participant, Account, Maximum Borrowing, Amount",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanTaxQualificationStatusExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Tax Qualification Status [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentAccumulatedGainLoss",
+            "type": "Concept",
+            "label": "EBP, Investment, Accumulated Gain (Loss)",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionParticipantContribution",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Contributions, Participants",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpInvestmentExcludingPlanInterestInMasterTrustFairValueTypeExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Investment, Excluding Plan Interest in Master Trust, Fair Value, Type [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EbpAccountingStandardUpdateAndChangeInAccountingPrincipleDescription",
+            "type": "Concept",
+            "label": "EBP, Accounting Standards Update and Change in Accounting Principle, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentLevel3ReconciliationIncreaseDecreaseForRealizedGainLoss",
+            "type": "Concept",
+            "label": "EBP, Investment, Level 3 Reconciliation, Increase (Decrease) from Realized Gain (Loss)",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpRiskAndUncertaintyLineItems",
+            "type": "Concept",
+            "label": "EBP, Risk and Uncertainty [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanOtherReceivable",
+            "type": "Concept",
+            "label": "EBP, Other Receivable",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanFullyBenefitResponsiveInvestmentContractTableTextBlock",
+            "type": "Concept",
+            "label": "EBP, Fully Benefit-Responsive Investment Contract [Table Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionInterestExpense",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Interest Expense",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EbpAccountingStandardUpdateExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Accounting Standards Update [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseDecrease",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase (Decrease)",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpFairValueInvestmentNavRedemptionOtherRestrictionDescription",
+            "type": "Concept",
+            "label": "EBP, Fair Value, Investment, NAV, Redemption Other Restriction, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNonparticipantDirectedInvestmentAbstract",
+            "type": "Concept",
+            "label": "EBP, Nonparticipant-Directed Investment [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentAccountingPolicyElectionMonthEndMeasurementDateElected",
+            "type": "Concept",
+            "label": "EBP, Investment, Accounting Policy Election, Month-End Measurement Date Elected [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDebtYearFive",
+            "type": "Concept",
+            "label": "EBP, Debt, Maturity, Year Five",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanEmployerCommonStockFundMember",
+            "type": "Concept",
+            "label": "EBP, Employer, Common Stock Fund [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanPooledSeparateAccountMember",
+            "type": "Concept",
+            "label": "EBP, Pooled Separate Account [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpCreditDerivativeMaximumPayoutAmount",
+            "type": "Concept",
+            "label": "EBP, Credit Derivative, Maximum Potential Future Payment, Amount",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanLiquidationBasisOfAccountingAdoptionDescription",
+            "type": "Concept",
+            "label": "EBP, Liquidation Basis of Accounting, Adoption, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanCash",
+            "type": "Concept",
+            "label": "EBP, Noninterest-Bearing Cash",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanParticipantContributionPretaxMaximumAnnualCompensationToTotalCompensationPercentage",
+            "type": "Concept",
+            "label": "EBP, Participant Contribution, Pretax, Maximum Annual Compensation to Total Compensation, Percentage",
+            "isAbstract": "false",
+            "dataType": "dtr-types:percentItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanParticipantDirectedMember",
+            "type": "Concept",
+            "label": "EBP, Participant-Directed [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentSoldCostBasisExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Investment Sold, Cost Basis [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanOtherLiability",
+            "type": "Concept",
+            "label": "EBP, Other Liability",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EbpFairValueInvestmentNavRedemptionRestrictionPeriodInEffect",
+            "type": "Concept",
+            "label": "EBP, Fair Value, Investment, NAV, Redemption Restriction, Period in Effect",
+            "isAbstract": "false",
+            "dataType": "xbrli:durationItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentMeasurementInput",
+            "type": "Concept",
+            "label": "EBP, Investment, Measurement Input",
+            "isAbstract": "false",
+            "dataType": "xbrli:decimalItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EbpContingencyLineItems",
+            "type": "Concept",
+            "label": "EBP, Contingency [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpSubsequentEventTable",
+            "type": "Concept",
+            "label": "EBP, Subsequent Event [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDebtAfterYearFive",
+            "type": "Concept",
+            "label": "EBP, Debt, Maturity, after Year Five",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionParticipantLoan",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Participant Loans",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDebtYearFour",
+            "type": "Concept",
+            "label": "EBP, Debt, Maturity, Year Four",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EbpDerivativeLiabilitySetoffRightDescription",
+            "type": "Concept",
+            "label": "EBP, Derivative Liability, Setoff Right, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanParticipantDirectedStatusAxis",
+            "type": "Concept",
+            "label": "EBP, Participant-Directed and Nonparticipant-Directed Status [Axis]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentFairValueAndNavTable",
+            "type": "Concept",
+            "label": "EBP, Investment, Fair Value and NAV [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpRiskAndUncertaintyPolicyTextBlock",
+            "type": "Concept",
+            "label": "EBP, Risk and Uncertainty [Policy Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentTypeExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Investment, Current Value, Type [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentFairValueAndNavLineItems",
+            "type": "Concept",
+            "label": "EBP, Investment, Fair Value and NAV [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpFairValueInvestmentNavRedemptionDescription",
+            "type": "Concept",
+            "label": "EBP, Fair Value, Investment, NAV, Redemption, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanEmployerContributionParticipantCompensationMatchedPercentage",
+            "type": "Concept",
+            "label": "EBP, Employer Contribution, Participant Compensation Matched, Percentage",
+            "isAbstract": "false",
+            "dataType": "dtr-types:percentItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanTaxRulingObtained",
+            "type": "Concept",
+            "label": "EBP, Tax Ruling, Obtained [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeAssetSetoffRightDescription",
+            "type": "Concept",
+            "label": "EBP, Derivative Asset, Setoff Right, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeAssetAbstract",
+            "type": "Concept",
+            "label": "EBP, Derivative Asset [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpNonemployerPreferredStockMember",
+            "type": "Concept",
+            "label": "EBP, Nonemployer, Preferred Stock [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDebtTable",
+            "type": "Concept",
+            "label": "EBP, Debt [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpRiskAndUncertaintyTable",
+            "type": "Concept",
+            "label": "EBP, Risk and Uncertainty [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionOtherIncome",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Other Income",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanOtherEmployerAsset",
+            "type": "Concept",
+            "label": "EBP, Other Employer Asset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanContributionTableTextBlock",
+            "type": "Concept",
+            "label": "EBP, Contribution [Table Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAccountingPolicyTable",
+            "type": "Concept",
+            "label": "EBP, Accounting Policy [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNoteReceivableFromParticipant",
+            "type": "Concept",
+            "label": "EBP, Note Receivable from Participant",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInterestInMasterTrustPercentage",
+            "type": "Concept",
+            "label": "EBP, Interest in Master Trust, Percentage",
+            "isAbstract": "false",
+            "dataType": "dtr-types:percentItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentPlanInterestInMasterTrustFairAndContractValueAbstract",
+            "type": "Concept",
+            "label": "EBP, Investment, Plan Interest in Master Trust, Fair and Contract Value [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionAbstract",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanStatementOfNetAssetAvailableForBenefitAbstract",
+            "type": "Concept",
+            "label": "EBP, Statement of Net Asset Available for Benefit [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfAssetAcquiredAndDisposedTable",
+            "type": "Concept",
+            "label": "EBP, Schedule of Asset Acquired and Disposed of within Year [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionNetAssetAvailableForBenefit",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Net Assets",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanFullyBenefitResponsiveInvestmentContractLineItems",
+            "type": "Concept",
+            "label": "EBP, Fully Benefit-Responsive Investment Contract [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpRiskAndUncertaintyConcentrationOfInvestmentAtFairValueToNetAssetsAmount",
+            "type": "Concept",
+            "label": "EBP, Risk and Uncertainty, Concentration of Investment at Fair Value to Net Assets, Amount",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNetAssetAvailableForBenefitAbstract",
+            "type": "Concept",
+            "label": "EBP, Net Asset Available for Benefit [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanFullyBenefitResponsiveInvestmentContractLimitationOnTransactingAtContractValueNotProbable",
+            "type": "Concept",
+            "label": "EBP, Fully Benefit-Responsive Investment Contract, Limitation on Transacting at Contract Value, Not Probable [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeTable",
+            "type": "Concept",
+            "label": "EBP, Derivative [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeLiabilityFairValueOfCollateral",
+            "type": "Concept",
+            "label": "EBP, Derivative Liability, Fair Value of Collateral",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500NoteReceivableDeemedDistribution",
+            "type": "Concept",
+            "label": "EBP, Reconciliation to Form 5500, Note Receivable, Deemed Distribution",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EbpRiskAndUncertaintyConcentrationOfInvestmentAtFairValueToTotalInvestmentsPercentage",
+            "type": "Concept",
+            "label": "EBP, Risk and Uncertainty, Concentration of Investment at Fair Value to Total Investments, Percentage",
+            "isAbstract": "false",
+            "dataType": "dtr-types:percentItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EbpRiskAndUncertaintyConcentrationOfInvestmentBenchmarkThresholdPercentage",
+            "type": "Concept",
+            "label": "EBP, Risk and Uncertainty, Concentration of Investment, Benchmark Threshold Percentage",
+            "isAbstract": "false",
+            "dataType": "dtr-types:percentItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EbpDerivativeCreditRiskContingentFeatureLiabilityPositionAdditionalCollateralFairValue",
+            "type": "Concept",
+            "label": "EBP, Derivative, Credit Risk, Contingent Feature, Liability Position, Additional Collateral, Fair Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForfeitedNonvestedAccountAbstract",
+            "type": "Concept",
+            "label": "EBP, Forfeited Nonvested Account [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanContributionTable",
+            "type": "Concept",
+            "label": "EBP, Contribution [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseForInterestAndDividendIncomeOnInvestment",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase from Interest and Dividend Income on Investment",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanEmployerContributionMatchingPercentage",
+            "type": "Concept",
+            "label": "EBP, Employer Contribution, Matching Percentage",
+            "isAbstract": "false",
+            "dataType": "dtr-types:percentItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAccruedExpense",
+            "type": "Concept",
+            "label": "EBP, Accrued Expense",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanLiabilityInvestmentPurchase",
+            "type": "Concept",
+            "label": "EBP, Liability for Investment Purchase",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleAllocationIncomeAndChangeInPlanEquityAbstract",
+            "type": "Concept",
+            "label": "EBP, Schedule of Allocation, Income and Change in Plan Equity [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeAssetSubjectToMasterNettingArrangementCollateralObligationToReturnCashOffsetAgainstDerivativeAsset",
+            "type": "Concept",
+            "label": "EBP, Derivative Asset, Subject to Master Netting Arrangement, Collateral, Obligation to Return Cash, Offset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentAcquiredNumber",
+            "type": "Concept",
+            "label": "EBP, Investment, Acquired, Number of Investment",
+            "isAbstract": "false",
+            "dataType": "xbrli:integerItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpAccountingStandardUpdateAndChangeInAccountingPrinciplePriorPeriodRetrospectiveAdjustmentDescription",
+            "type": "Concept",
+            "label": "EBP, Accounting Standards Update and Change in Accounting Principle, Prior-Period Retrospective Adjustment, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpRiskAndUncertaintyConcentrationOfInvestmentAtFairValueToTotalInvestmentsAmount",
+            "type": "Concept",
+            "label": "EBP, Risk and Uncertainty, Concentration of Investment at Fair Value to Total Investments, Amount",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleAllocationAssetAndLiabilityAbstract",
+            "type": "Concept",
+            "label": "EBP, Schedule of Allocation, Asset and Liability [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseDecreaseForUnrealizedGainLossOnInvestment",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase (Decrease) from Unrealized Gain (Loss) on Investment",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfAssetHeldForInvestmentTableTextBlock",
+            "type": "Concept",
+            "label": "EBP, Schedule of Asset Held for Investment [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanParticipantLiability",
+            "type": "Concept",
+            "label": "EBP, Liability to Participant",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanFullyBenefitResponsiveInvestmentContractDescription",
+            "type": "Concept",
+            "label": "EBP, Fully Benefit-Responsive Investment Contract, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionLiability",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Total Liabilities",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EbpDerivativeAssetSubjectToMasterNettingArrangementLiabilityOffset",
+            "type": "Concept",
+            "label": "EBP, Derivative Asset, Subject to Master Netting Arrangement, Liability Offset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500Abstract",
+            "type": "Concept",
+            "label": "EBP, Reconciliation of Financial Statement to Form 5500 [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNoteReceivableFromParticipantAccountMaximumBorrowingToTotalAccountPercentage",
+            "type": "Concept",
+            "label": "EBP, Note Receivable from Participant, Account, Maximum Borrowing, to Total Account, Percentage",
+            "isAbstract": "false",
+            "dataType": "dtr-types:percentItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncrease",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseDecreaseForOtherIncomeLossOnInvestment",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase (Decrease) from Other Investment Income (Loss)",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentAccountingPolicyElectionMeasurementDate",
+            "type": "Concept",
+            "label": "EBP, Investment, Accounting Policy Election, Measurement Date",
+            "isAbstract": "false",
+            "dataType": "xbrli:dateItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500ChangeInNetAssetAvailableForBenefitDecreaseForDeemedDistributionCurrentPeriod",
+            "type": "Concept",
+            "label": "EBP, Reconciliation to Form 5500, Change in Net Asset Available for Benefit, Current Period, Decrease from Deemed Distribution",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanParticipantDirectedStatusDomain",
+            "type": "Concept",
+            "label": "EBP, Participant-Directed and Nonparticipant-Directed Status [Domain]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanSelfDirectedBrokerageAccountMember",
+            "type": "Concept",
+            "label": "EBP, Self-Directed Brokerage Account [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDebtInterestRate",
+            "type": "Concept",
+            "label": "EBP, Debt, Interest Rate",
+            "isAbstract": "false",
+            "dataType": "dtr-types:percentItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentAcquiredExcludingPlanInterestInMasterTrustPurchasePrice",
+            "type": "Concept",
+            "label": "EBP, Investment Acquired, Excluding Plan Interest in Master Trust, Purchase Price",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanFullyBenefitResponsiveInvestmentContractTextBlock",
+            "type": "Concept",
+            "label": "EBP, Fully Benefit-Responsive Investment Contract [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CreatePlanSpecificMemberWithLegalEntityAxisForEmployeeBenefitPlanFilingInFollowingFormatEbpPlanNumberMemberGuidance",
+            "type": "Concept",
+            "label": "Create Plan-Specific [Member] with Legal Entity [Axis] in following format, [EBP] Plan Number [0-9]{3} (for example, standard label, EBP 001 [Member] with element name, EBP001Member) for employee benefit plan filing [Guidance]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:guidanceItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpNonemployerCommonStockMember",
+            "type": "Concept",
+            "label": "EBP, Nonemployer, Common Stock [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpAccountingStandardUpdateAndChangeInAccountingPrinciplePriorPeriodNotRestated",
+            "type": "Concept",
+            "label": "EBP, Accounting Standards Update and Change in Accounting Principle, Prior Period Not Restated [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500NetAssetAvailableForBenefitContractValueToCurrentValueAdjustment",
+            "type": "Concept",
+            "label": "EBP, Reconciliation to Form 5500, Net Asset Available for Benefit, Contract Value to Current Value Adjustment",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanParticipantContributionAutomaticDeferralRate",
+            "type": "Concept",
+            "label": "EBP, Participant Contribution, Automatic, Deferral Rate",
+            "isAbstract": "false",
+            "dataType": "dtr-types:percentItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentFairValueAndNavAbstract",
+            "type": "Concept",
+            "label": "EBP, Investment, Fair Value and NAV [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentSoldPlanInterestInMasterTrustSellingPrice",
+            "type": "Concept",
+            "label": "EBP, Investment Sold, Plan Interest in Master Trust, Selling Price",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAssetHeldForInvestmentAbstract",
+            "type": "Concept",
+            "label": "EBP, Asset Held for Investment [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500LineItems",
+            "type": "Concept",
+            "label": "EBP, Reconciliation of Financial Statement to Form 5500 [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentFairAndContractValue",
+            "type": "Concept",
+            "label": "EBP, Investment, Fair and Contract Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionNetIncomeLossAbstract",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Net Income (Loss) [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpFairValueInvestmentNavRedemptionNoticePeriod",
+            "type": "Concept",
+            "label": "EBP, Fair Value, Investment, NAV, Redemption, Notice Period",
+            "isAbstract": "false",
+            "dataType": "xbrli:durationItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfAllocationAssetAndLiabilityTable",
+            "type": "Concept",
+            "label": "EBP, Schedule of Allocation, Asset and Liability [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanTaxStatusTable",
+            "type": "Concept",
+            "label": "EBP, Tax Status [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentLevel3ReconciliationRollForward",
+            "type": "Concept",
+            "label": "EBP, Investment, Level 3 Reconciliation [Roll Forward]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpAccountingStandardUpdateAdopted",
+            "type": "Concept",
+            "label": "EBP, Accounting Standards Update, Adopted [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanStatementOfNetAssetAvailableForBenefitTable",
+            "type": "Concept",
+            "label": "EBP, Statement of Net Asset Available for Benefit [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanStatementOfChangeInNetAssetAvailableForBenefitLineItems",
+            "type": "Concept",
+            "label": "EBP, Statement of Change in Net Asset Available for Benefit [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpInvestmentChangeInValuationTechniqueDescription",
+            "type": "Concept",
+            "label": "EBP, Investment, Change in Valuation Technique, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500ChangeInNetAssetAvailableForBenefitIncreaseDecreaseForDeemedDistributionAbstract",
+            "type": "Concept",
+            "label": "EBP, Reconciliation to Form 5500, Change in Net Asset Available for Benefit, Increase (Decrease) from Deemed Distribution [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpFairValueInvestmentNavLiquidatingPeriodUnknown",
+            "type": "Concept",
+            "label": "EBP, Fair Value, Investment, NAV, Liquidating, Period Unknown [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfDelinquentParticipantContributionNotCorrected",
+            "type": "Concept",
+            "label": "EBP, Schedule of Delinquent Participant Contribution, Not Corrected",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfAllocationIncomeAndChangeInPlanEquityLineItems",
+            "type": "Concept",
+            "label": "EBP, Schedule of Allocation, Income and Change in Plan Equity [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeAssetSubjectToMasterNettingArrangementGrossLiabilityAndCollateralObligationToReturnCashOffset",
+            "type": "Concept",
+            "label": "EBP, Derivative Asset, Subject to Master Netting Arrangement, Liability and Collateral, Obligation to Return Cash, Offset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseForInterestIncomeOnInvestment",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase from Interest Income on Investment",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentLevel3ReconciliationDecreaseForSale",
+            "type": "Concept",
+            "label": "EBP, Investment, Level 3 Reconciliation, Decrease from Sale",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentContractValueAbstract",
+            "type": "Concept",
+            "label": "EBP, Investment, Contract Value [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanPlanNumber",
+            "type": "Concept",
+            "label": "EBP, Plan Number",
+            "isAbstract": "false",
+            "dataType": "us-types:threeDigitItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanParticipantContributionReceivable",
+            "type": "Concept",
+            "label": "EBP, Participant Contribution, Receivable",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpContingencyTable",
+            "type": "Concept",
+            "label": "EBP, Contingency [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanTaxDeterminationLetterObtained",
+            "type": "Concept",
+            "label": "EBP, Tax Determination Letter, Obtained [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNonparticipantDirectedInvestmentLineItems",
+            "type": "Concept",
+            "label": "EBP, Nonparticipant-Directed Investment [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeNotional",
+            "type": "Concept",
+            "label": "EBP, Derivative, Notional, Amount",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpDerivativeLiabilitySubjectToMasterNettingArrangementCollateralRightToReclaimCashOffsetAgainstDerivativeLiability",
+            "type": "Concept",
+            "label": "EBP, Derivative Liability, Subject to Master Netting Arrangement, Collateral, Right to Reclaim Cash, Offset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDescriptionOfPlanAbstract",
+            "type": "Concept",
+            "label": "EBP, Description of Plan and Accounting Change [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAssetHeldForInvestmentPlanInterestInMasterTrustCurrentValue",
+            "type": "Concept",
+            "label": "EBP, Asset Held for Investment, Plan Interest in Master Trust, Current Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500PaymentToParticipantIncreaseForAllocationToWithdrawingParticipantNotYetPaid",
+            "type": "Concept",
+            "label": "EBP, Reconciliation to Form 5500, Payment to Participant, Increase from Allocation to Withdrawing Participant, Not yet Paid",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentSoldExcludingPlanInterestInMasterTrustCost",
+            "type": "Concept",
+            "label": "EBP, Investment Sold, Excluding Plan Interest in Master Trust, Cost",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentSoldExcludingPlanInterestInMasterTrustSellingPrice",
+            "type": "Concept",
+            "label": "EBP, Investment Sold, Excluding Plan Interest in Master Trust, Selling Price",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForfeitedNonvestedAccount",
+            "type": "Concept",
+            "label": "EBP, Forfeited Nonvested Account",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDebtNumberOfSharesReleasedForEsop",
+            "type": "Concept",
+            "label": "EBP, Debt, Released for ESOP, Number of Shares",
+            "isAbstract": "false",
+            "dataType": "xbrli:sharesItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDebtYearOne",
+            "type": "Concept",
+            "label": "EBP, Debt, Maturity, Year One",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitTransferToFromExternalPlan",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Transfer to (from) Plan",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpCreditDerivativeNoLimitationMaximumPayout",
+            "type": "Concept",
+            "label": "EBP, Credit Derivative, Maximum Potential Future Payment, No Limitation [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentMeasurementInputExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Investment, Measurement Input [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EbpAccountingStandardUpdateEffectNotKnownOrEstimable",
+            "type": "Concept",
+            "label": "EBP, Accounting Standards Update, Adoption, Effect Not Known or Estimable [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpFairValueMeasurementInvestmentUnobservableInputUncertaintyDescription",
+            "type": "Concept",
+            "label": "EBP, Fair Value Measurement, Investment, Unobservable Input, Uncertainty, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentContractValue",
+            "type": "Concept",
+            "label": "EBP, Investment, Contract Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanMasterTrustAbstract",
+            "type": "Concept",
+            "label": "EBP, Master Trust [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionReceivableOther",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Receivables, Other",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfAllocationAssetAndLiabilityLineItems",
+            "type": "Concept",
+            "label": "EBP, Schedule of Allocation, Asset and Liability [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanLiabilityDerivativeVariationMargin",
+            "type": "Concept",
+            "label": "EBP, Liability, Derivative, Variation Margin",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNoteReceivableFromParticipantPolicyTextBlock",
+            "type": "Concept",
+            "label": "EBP, Note Receivable from Participant [Policy Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpFairValueInvestmentNavLiquidatingRemainingPeriod",
+            "type": "Concept",
+            "label": "EBP, Fair Value, Investment, NAV, Liquidating, Remaining Period",
+            "isAbstract": "false",
+            "dataType": "xbrli:durationItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EbpDerivativeLiabilitySubjectToMasterNettingArrangementAfterOffset",
+            "type": "Concept",
+            "label": "EBP, Derivative Liability, Subject to Master Netting Arrangement, after Offset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanIrsMinimumFundingWaiverRequest",
+            "type": "Concept",
+            "label": "EBP, IRS, Minimum Funding Waiver Request, Pending [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpSubsequentEventEffectInestimable",
+            "type": "Concept",
+            "label": "EBP, Subsequent Event, Effect, Inestimable [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpFairValueInvestmentNavRedemptionRestrictionLapseDateUnknown",
+            "type": "Concept",
+            "label": "EBP, Fair Value, Investment, NAV, Redemption Restriction, Lapse Date, Unknown [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "UseLegalEntityAxisOnEveryXbrlFactTaggedInEachEmployeeBenefitPlanFilingGuidance",
+            "type": "Concept",
+            "label": "Use Legal Entity [Axis] on every XBRL fact tagged in each employee benefit plan filing [Guidance]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:guidanceItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForfeitedNonvestedAccountDecreaseForEmployerContribution",
+            "type": "Concept",
+            "label": "EBP, Forfeited Nonvested Account, Decrease from Employer Contribution",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitDecreaseForPaymentToParticipant",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Decrease from Payment to Participant",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanExcessContributionPayable",
+            "type": "Concept",
+            "label": "EBP, Excess Contribution Payable",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanEmployerOfficerMember",
+            "type": "Concept",
+            "label": "EBP, Employer, Officer [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentExcludingPlanInterestInMasterTrustFairAndContractValue",
+            "type": "Concept",
+            "label": "EBP, Investment, Excluding Plan Interest in Master Trust, Fair and Contract Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseForParticipantContributionRollover",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase from Participant Contribution, Rollover",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanParticipantLoanMaturityDate",
+            "type": "Concept",
+            "label": "EBP, Asset Held for Investment, Participant Loan, Maturity Date",
+            "isAbstract": "false",
+            "dataType": "xbrli:dateItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseForEmployerContributionCash",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase from Employer Contribution, Cash",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanSubsequentEventTextBlock",
+            "type": "Concept",
+            "label": "EBP, Subsequent Event [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpStatementOfChangeInNetAssetAvailableForBenefitDomain",
+            "type": "Concept",
+            "label": "EBP, Statement of Change in Net Asset Available for Benefit [Domain]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentPolicyTextBlock",
+            "type": "Concept",
+            "label": "EBP, Investment [Policy Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDebtYearTwo",
+            "type": "Concept",
+            "label": "EBP, Debt, Maturity, Year Two",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNonconsolidatedMasterTrustMember",
+            "type": "Concept",
+            "label": "EBP, Nonconsolidated, Master Trust [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentAcquiredExcludingPlanInterestInMasterTrustCurrentValue",
+            "type": "Concept",
+            "label": "EBP, Investment Acquired, Excluding Plan Interest in Master Trust, Current Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpDerivativeAssetSubjectToMasterNettingArrangementGrossLiabilityAndCollateralObligationToReturnCashOffsetAbstract",
+            "type": "Concept",
+            "label": "EBP, Derivative Asset, Subject to Master Netting Arrangement, Liability and Collateral, Obligation to Return Cash, Offset [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpInvestmentValuationAndMeasurementAbstract",
+            "type": "Concept",
+            "label": "EBP, Investment, Valuation and Measurement [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpLiabilityWithInseparableThirdPartyCreditEnhancement",
+            "type": "Concept",
+            "label": "EBP, Liability with Inseparable Third-Party Credit Enhancement [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EmployeeBenefitPlanRelatedPartyAndPartyInInterestDomain",
+            "type": "Concept",
+            "label": "EBP, Related Party and Party-in-Interest [Domain]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanLiquidationBasisOfAccountingLiquidationPlanDescription",
+            "type": "Concept",
+            "label": "EBP, Liquidation Basis of Accounting, Liquidation Plan, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpLossContingencyInestimableLoss",
+            "type": "Concept",
+            "label": "EBP, Contingency, Loss, Inestimable [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeTermOfContract",
+            "type": "Concept",
+            "label": "EBP, Derivative, Term of Contract",
+            "isAbstract": "false",
+            "dataType": "xbrli:durationItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpSubsequentEventLineItems",
+            "type": "Concept",
+            "label": "EBP, Subsequent Event [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfAllocationAssetAndLiabilityTableTextBlock",
+            "type": "Concept",
+            "label": "EBP, Schedule of Allocation, Asset and Liability [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500PaymentToParticipantDecreaseForAllocationToWithdrawingParticipantPaid",
+            "type": "Concept",
+            "label": "EBP, Reconciliation to Form 5500, Payment to Participant, Decrease from Allocation to Withdrawing Participant, Paid",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500NetAssetAvailableForBenefitDeemedDistribution",
+            "type": "Concept",
+            "label": "EBP, Reconciliation to Form 5500, Net Asset Available for Benefit, Deemed Distribution",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitDecreaseForManagementFeeExpense",
+            "type": "Concept",
+            "label": "Employee Benefit Plan, Change in Net Asset Available for Benefit, Decrease for Management Fee Expense (Deprecated 2025)",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EbpRiskAndUncertaintyAbstract",
+            "type": "Concept",
+            "label": "EBP, Risk and Uncertainty [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500TableTextBlock",
+            "type": "Concept",
+            "label": "EBP, Reconciliation of Financial Statement to Form 5500 [Table Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanLiquidationBasisOfAccounting",
+            "type": "Concept",
+            "label": "EBP, Liquidation Basis of Accounting [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500ChangeInNetAssetAvailableForBenefitIncreaseForDeemedDistributionPriorPeriod",
+            "type": "Concept",
+            "label": "EBP, Reconciliation to Form 5500, Change in Net Asset Available for Benefit, Prior Period, Increase from Deemed Distribution",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAsset",
+            "type": "Concept",
+            "label": "EBP, Asset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpDerivativeAssetFairValueOfCollateral",
+            "type": "Concept",
+            "label": "EBP, Derivative Asset, Fair Value of Collateral",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanLiquidationBasisOfAccountingPolicyTextBlock",
+            "type": "Concept",
+            "label": "EBP, Liquidation Basis of Accounting [Policy Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanEmployerCommonStockMember",
+            "type": "Concept",
+            "label": "EBP, Employer, Common Stock [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitDecreaseForInvestmentExpense",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Decrease from Investment Expense",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500ChangeInNetAssetAvailableForBenefitIncreaseDecreaseForDeemedDistribution",
+            "type": "Concept",
+            "label": "EBP, Reconciliation to Form 5500, Change in Net Asset Available for Benefit, Increase (Decrease) from Deemed Distribution",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentFairValueAndNavTextBlock",
+            "type": "Concept",
+            "label": "EBP, Investment, Fair Value and NAV [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionReceivableEmployerContribution",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Receivables, Employer Contributions",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAccountingPolicyLineItems",
+            "type": "Concept",
+            "label": "EBP, Accounting Policy [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReceivableAbstract",
+            "type": "Concept",
+            "label": "EBP, Receivable [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanMasterTrustTable",
+            "type": "Concept",
+            "label": "EBP, Master Trust [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentInterestRate",
+            "type": "Concept",
+            "label": "EBP, Investment, Interest Rate",
+            "isAbstract": "false",
+            "dataType": "dtr-types:percentItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpFairValueInvestmentNavRedemptionRestrictionRemainingPeriod",
+            "type": "Concept",
+            "label": "EBP, Fair Value, Investment, NAV, Redemption Restriction, Remaining Period",
+            "isAbstract": "false",
+            "dataType": "xbrli:durationItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfDelinquentParticipantContributionTableTextBlock",
+            "type": "Concept",
+            "label": "EBP, Schedule of Delinquent Participant Contribution [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanContributionAbstract",
+            "type": "Concept",
+            "label": "EBP, Contribution [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpAccountingStandardUpdateTransitionOptionElectedExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Accounting Standards Update, Transition Option Elected [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanTraditionalGuaranteedInvestmentContractMember",
+            "type": "Concept",
+            "label": "EBP, Traditional Guaranteed Investment Contract [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionAsset",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Total Assets",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanRelatedPartyAndPartyInInterestTransactionsLineItems",
+            "type": "Concept",
+            "label": "EBP, Related Party and Party-in-Interest Transactions [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfAllocationIncomeAndChangeInPlanEquityTableTextBlock",
+            "type": "Concept",
+            "label": "EBP, Schedule of Allocation, Income and Change in Plan Equity [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseDecreaseForIncomeLossOnInvestment",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase (Decrease) from Income (Loss) on Investment",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpCreditDerivativeAbstract",
+            "type": "Concept",
+            "label": "EBP, Credit Derivative [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanPartyInInterestRelationshipToPlanExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Party-in-Interest, Relationship to Plan [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentLevel3ReconciliationIncreaseForTransferToLevel3",
+            "type": "Concept",
+            "label": "EBP, Investment, Level 3 Reconciliation, Increase from Transfer into Level 3",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentFairValue",
+            "type": "Concept",
+            "label": "EBP, Investment, Fair Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpFairValueInvestmentNavUnfundedCommitment",
+            "type": "Concept",
+            "label": "EBP, Fair Value, Investment, NAV, Unfunded Commitment",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EbpAccountingStandardUpdateAndChangeInAccountingPrincipleRetrospectiveApplicationImpracticable",
+            "type": "Concept",
+            "label": "EBP, Accounting Standards Update and Change in Accounting Principle, Retrospective Application Impracticable [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAssetHeldForInvestmentInvestmentExcludingPlanInterestInMasterTrustCurrentValue",
+            "type": "Concept",
+            "label": "EBP, Asset Held for Investment, Investment, Excluding Plan Interest in Master Trust, Current Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfDelinquentParticipantContributionPendingCorrectionInVfcp",
+            "type": "Concept",
+            "label": "EBP, Schedule of Delinquent Participant Contribution, Pending Correction in VFCP",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentLevel3ReconciliationDecreaseForTransferFromLevel3",
+            "type": "Concept",
+            "label": "EBP, Investment, Level 3 Reconciliation, Decrease from Transfer out of Level 3",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanContributionTextBlock",
+            "type": "Concept",
+            "label": "EBP, Contribution [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeAssetSubjectToMasterNettingArrangementCollateralObligationToReturnCashNotOffset",
+            "type": "Concept",
+            "label": "EBP, Derivative Asset, Subject to Master Netting Arrangement, Collateral, Obligation to Return Cash Not Offset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentFairValueAndNavTableTextBlock",
+            "type": "Concept",
+            "label": "EBP, Investment, Fair Value and NAV [Table Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanSyntheticInvestmentContractMember",
+            "type": "Concept",
+            "label": "EBP, Synthetic Investment Contract [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseForEmployerContributionNoncash",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase from Employer Contribution, Noncash",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpDerivativeLiabilitySubjectToMasterNettingArrangementBeforeOffset",
+            "type": "Concept",
+            "label": "EBP, Derivative Liability, Subject to Master Netting Arrangement, before Offset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanContributionParticipatingEmployerAxis",
+            "type": "Concept",
+            "label": "EBP, Contribution, Participating Employer [Axis]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpInvestmentLevel3ReconciliationReasonForTransferIntoOutOfLevel3Description",
+            "type": "Concept",
+            "label": "EBP, Investment, Level 3 Reconciliation, Reason for Transfer into (out of) Level 3, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanEmployerCommonStockClassBMember",
+            "type": "Concept",
+            "label": "EBP, Employer, Common Stock, Class B [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500ChangeInNetAssetAvailableForBenefitIncreaseDecreaseForContractValueToCurrentValue",
+            "type": "Concept",
+            "label": "EBP, Reconciliation to Form 5500, Change in Net Asset Available for Benefit, Increase (Decrease) from Contract Value to Current Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAdministrationCostAbsorbedByEmployer",
+            "type": "Concept",
+            "label": "EBP, Administration Cost, Absorbed by Employer [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAssetHeldForInvestmentPlanInterestInMasterTrustAllocationStatusExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Asset Held for Investment, Plan Interest in Master Trust, Allocation Status [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfAssetAcquiredAndDisposedLineItems",
+            "type": "Concept",
+            "label": "EBP, Schedule of Asset Acquired and Disposed of within Year [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpCreditDerivativeRiskExposureDescription",
+            "type": "Concept",
+            "label": "EBP, Credit Derivative, Risk Exposure, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativePolicyTextBlock",
+            "type": "Concept",
+            "label": "EBP, Derivative [Policy Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseDecreaseAbstract",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase (Decrease) [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitTransferToFromFundWithinEsop",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Transfer to (from) Fund within ESOP",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfAssetHeldForInvestmentLineItems",
+            "type": "Concept",
+            "label": "EBP, Schedule of Asset Held for Investment [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionNoncashContribution",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Noncash Contributions",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseForEmployerContribution",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase from Employer Contribution, Cash and Noncash",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanTrusteeMember",
+            "type": "Concept",
+            "label": "EBP, Trustee [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanManagementMember",
+            "type": "Concept",
+            "label": "EBP, Management [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpContingencyAbstract",
+            "type": "Concept",
+            "label": "EBP, Contingency [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDebtInterestPayable",
+            "type": "Concept",
+            "label": "EBP, Debt, Interest Payable",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNoteReceivableFromParticipantAccountMinimumBorrowingAmount",
+            "type": "Concept",
+            "label": "EBP, Note Receivable from Participant, Account, Minimum Borrowing, Amount",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanEmployerContributionReceivable",
+            "type": "Concept",
+            "label": "EBP, Employer Contribution, Receivable",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpAccountingStandardUpdateAndChangeInAccountingPrincipleTable",
+            "type": "Concept",
+            "label": "EBP, Accounting Standards Update and Change in Accounting Principle [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpSubsequentEventDescription",
+            "type": "Concept",
+            "label": "EBP, Subsequent Event, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpChangeInAccountingPrincipleTypeExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Change in Accounting Principle, Type [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanSubsequentEventPolicyTextBlock",
+            "type": "Concept",
+            "label": "EBP, Subsequent Event [Policy Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpRiskAndUncertaintyConcentrationOfInvestmentAtFairValueToNetAssetsPercentage",
+            "type": "Concept",
+            "label": "EBP, Risk and Uncertainty, Concentration of Investment at Fair Value to Net Assets, Percentage",
+            "isAbstract": "false",
+            "dataType": "dtr-types:percentItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EbpInvestmentProgramSingleParticipationStatusExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Investment Program, Single Participation Status [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EmployeeBenefitPlanBasisOfAccountingPolicyTextBlock",
+            "type": "Concept",
+            "label": "EBP, Basis of Accounting [Policy Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionNetGainLossOnSale",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Net Gain (Loss) on Sale of Assets",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpAccountingStandardUpdateImmaterialEffect",
+            "type": "Concept",
+            "label": "EBP, Accounting Standards Update, Immaterial Effect [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "UseLegalEntityAxisOnEveryXbrlFactTaggedWhenPlanSponsorHasMultipleEmployeeBenefitPlanFilingsInSamePlanYearGuidance",
+            "type": "Concept",
+            "label": "Use Legal Entity [Axis] on every XBRL fact tagged when employer has multiple Employee Benefit Plan filings in same plan year [Guidance] (Deprecated 2025)",
+            "isAbstract": "true",
+            "dataType": "dtr-types:guidanceItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentLevel3ReconciliationIncreaseDecreaseForUnrealizedGainLoss",
+            "type": "Concept",
+            "label": "EBP, Investment, Level 3 Reconciliation, Increase (Decrease) from Unrealized Gain (Loss)",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpDerivativeAssetSubjectToMasterNettingArrangementCollateralObligationToReturnSecurityNotOffset",
+            "type": "Concept",
+            "label": "EBP, Derivative Asset, Subject to Master Netting Arrangement, Collateral, Obligation to Return Security Not Offset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EbpInvestmentLevel3ReconciliationIncreaseDecreaseFromGainLoss",
+            "type": "Concept",
+            "label": "EBP, Investment, Level 3 Reconciliation, Increase (Decrease) from Gain (Loss)",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanTaxStatusLineItems",
+            "type": "Concept",
+            "label": "EBP, Tax Status [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfAssetHeldForInvestmentAbstract",
+            "type": "Concept",
+            "label": "EBP, Schedule of Asset Held for Investment [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionCorrectiveDistribution",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Corrective Distributions",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseDecreaseForRealizedGainLossOnInvestment",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase (Decrease) from Realized Gain (Loss) on Investment",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanTaxDeterminationLetterDate",
+            "type": "Concept",
+            "label": "EBP, Tax Determination Letter, Date",
+            "isAbstract": "false",
+            "dataType": "xbrli:dateItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeCreditRiskContingentFeatureLiabilityPositionCollateralPostedFairValue",
+            "type": "Concept",
+            "label": "EBP, Derivative, Credit Risk, Contingent Feature, Liability Position, Collateral Posted, Fair Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpDerivativeAbstract",
+            "type": "Concept",
+            "label": "EBP, Derivative [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanModifiedCashBasis",
+            "type": "Concept",
+            "label": "EBP, Modified Cash Basis [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanEmployerPreferredStockMember",
+            "type": "Concept",
+            "label": "EBP, Employer, Preferred Stock [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionTotalContribution",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Total Contributions",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanLiquidationDateExpectedToComplete",
+            "type": "Concept",
+            "label": "EBP, Liquidation Date, Expected to Complete",
+            "isAbstract": "false",
+            "dataType": "xbrli:dateItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanFullyBenefitResponsiveInvestmentContractTerminationDescription",
+            "type": "Concept",
+            "label": "EBP, Fully Benefit-Responsive Investment Contract, Termination, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfAssetAcquiredAndDisposedTableTextBlock",
+            "type": "Concept",
+            "label": "EBP, Schedule of Asset Acquired and Disposed of within Year [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanFullyBenefitResponsiveInvestmentContractLimitationOnTransactingAtContractValueDescription",
+            "type": "Concept",
+            "label": "EBP, Fully Benefit-Responsive Investment Contract, Limitation on Transacting at Contract Value, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNonparticipantDirectedInvestmentTextBlock",
+            "type": "Concept",
+            "label": "EBP, Nonparticipant-Directed Investment [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentLevel3ReconciliationIncreaseForPurchase",
+            "type": "Concept",
+            "label": "EBP, Investment, Level 3 Reconciliation, Increase from Purchase",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseForContribution",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase from Contribution",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpDerivativeLiabilitySubjectToMasterNettingArrangementGrossAssetAndCollateralRightToReclaimCashOffsetAgainstDerivativeLiability",
+            "type": "Concept",
+            "label": "EBP, Derivative Liability, Subject to Master Netting Arrangement, Asset and Collateral, Right to Reclaim Cash, Offset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionParticipantLoanAbstract",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Participant Loans [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeAssetNotSubjectToMasterNettingArrangement",
+            "type": "Concept",
+            "label": "EBP, Derivative Asset, Not Subject to Master Netting Arrangement",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseDecreaseForInvestmentIncomeLossBeforeInvestmentExpense",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase (Decrease) from Investment Income (Loss), before Investment Expense",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanExcessContributionPayablePolicyTextBlock",
+            "type": "Concept",
+            "label": "EBP, Excess Contribution Payable [Policy Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentNumberOfSharesPurchased",
+            "type": "Concept",
+            "label": "EBP, Investment, Purchased, Number of Shares",
+            "isAbstract": "false",
+            "dataType": "xbrli:sharesItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitDecreaseForPaymentForInsuranceContractExcludedFromPlanAsset",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Decrease from Payment for Insurance Contract, Excluded from Plan Asset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EbpAccountingStandardUpdateAndChangeInAccountingPrincipleLineItems",
+            "type": "Concept",
+            "label": "EBP, Accounting Standards Update and Change in Accounting Principle [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeDescription",
+            "type": "Concept",
+            "label": "EBP, Derivative, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpCreditDerivativeMaximumExposureInestimableDescription",
+            "type": "Concept",
+            "label": "EBP, Credit Derivative, Maximum Potential Future Payment, Inestimable, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanEmployerDirectorMember",
+            "type": "Concept",
+            "label": "EBP, Employer, Director [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeAssetSubjectToMasterNettingArrangementDeductionOfFinancialInstrumentNotOffset",
+            "type": "Concept",
+            "label": "EBP, Derivative Asset, Subject to Master Netting Arrangement, Deduction of Financial Instrument Not Offset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentFairAndContractValueAbstract",
+            "type": "Concept",
+            "label": "EBP, Investment, Fair and Contract Value [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanUseOfEstimatePolicyTextBlock",
+            "type": "Concept",
+            "label": "EBP, Use of Estimate [Policy Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAllocatedMember",
+            "type": "Concept",
+            "label": "EBP, Allocated [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpAccountingStandardUpdateEarlyAdoption",
+            "type": "Concept",
+            "label": "EBP, Accounting Standards Update, Early Adoption [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseDecreaseForGainLossOnInvestmentAbstract",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase (Decrease) from Gain (Loss) on Investment [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanEmployerContributionNoncashDescription",
+            "type": "Concept",
+            "label": "EBP, Employer Contribution, Noncash, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeCreditRiskAbstract",
+            "type": "Concept",
+            "label": "EBP, Derivative, Credit Risk [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeLiabilitySubjectToMasterNettingArrangementDeductionOfFinancialInstrumentNotOffset",
+            "type": "Concept",
+            "label": "EBP, Derivative Liability, Subject to Master Netting Arrangement, Deduction of Financial Instrument Not Offset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpInvestmentLiabilityFairValue",
+            "type": "Concept",
+            "label": "EBP, Investment Liability, Fair Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDebtMaturityDate",
+            "type": "Concept",
+            "label": "EBP, Debt, Maturity Date",
+            "isAbstract": "false",
+            "dataType": "xbrli:dateItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeLiabilitySubjectToMasterNettingArrangementCollateralRightToReclaimCashNotOffset",
+            "type": "Concept",
+            "label": "EBP, Derivative Liability, Subject to Master Netting Arrangement, Collateral, Right to Reclaim Cash Not Offset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpOtherInvestmentMember",
+            "type": "Concept",
+            "label": "EBP, Other Investment [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanLiabilityAbstract",
+            "type": "Concept",
+            "label": "EBP, Liability [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseDecreaseForGainLossOnInvestment",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase (Decrease) from Gain (Loss) on Investment",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseDecreaseForIncomeLossOnInvestmentAbstract",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase (Decrease) from Income (Loss) on Investment [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentSoldNumber",
+            "type": "Concept",
+            "label": "EBP, Investment, Sold, Number of Investments",
+            "isAbstract": "false",
+            "dataType": "xbrli:integerItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanMasterTrustTableTextBlock",
+            "type": "Concept",
+            "label": "EBP, Master Trust [Table Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanStatementOfNetAssetAvailableForBenefitLineItems",
+            "type": "Concept",
+            "label": "EBP, Statement of Net Asset Available for Benefit [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentNumberOfSharesSold",
+            "type": "Concept",
+            "label": "EBP, Investment, Sold, Number of Shares",
+            "isAbstract": "false",
+            "dataType": "xbrli:sharesItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentParOrMaturityValue",
+            "type": "Concept",
+            "label": "EBP, Investment, Par or Maturity Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseForEmployerContributionAbstract",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase from Employer Contribution, Cash and Noncash [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfDelinquentParticipantContributionLineItems",
+            "type": "Concept",
+            "label": "EBP, Schedule of Delinquent Participant Contribution [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanStatementOfChangeInNetAssetAvailableForBenefitAbstract",
+            "type": "Concept",
+            "label": "EBP, Statement of Change in Net Asset Available for Benefit [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanStatementOfChangeInNetAssetAvailableForBenefitTable",
+            "type": "Concept",
+            "label": "EBP, Statement of Change in Net Asset Available for Benefit [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDebtYearThree",
+            "type": "Concept",
+            "label": "EBP, Debt, Maturity, Year Three",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNetAssetValuePerShareOrUnit",
+            "type": "Concept",
+            "label": "EBP, Net Asset Value per Share or Unit",
+            "isAbstract": "false",
+            "dataType": "dtr-types:perShareItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EbpDerivativeTextBlock",
+            "type": "Concept",
+            "label": "EBP, Derivative [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpInvestmentLevel3ReconciliationIncreaseDecreaseFromGainLossStatementOfChangeInNetAssetAvailableForBenefitExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Investment, Level 3 Reconciliation, Increase (Decrease) from Gain (Loss), Statement of Change in Net Asset Available for Benefit [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeAssetSubjectToMasterNettingArrangementAfterOffsetAndDeduction",
+            "type": "Concept",
+            "label": "EBP, Derivative Asset, Subject to Master Netting Arrangement, after Offset and Deduction",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpDerivativeLiabilitySubjectToMasterNettingArrangementAfterOffsetAndDeductionAbstract",
+            "type": "Concept",
+            "label": "EBP, Derivative Liability, Subject to Master Netting Arrangement, after Offset and Deduction [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionTotalAdministrativeExpense",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Total Administrative Expenses",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanEmployerPrincipalHolderMember",
+            "type": "Concept",
+            "label": "EBP, Employer, Principal Holder [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanUnallocatedMember",
+            "type": "Concept",
+            "label": "EBP, Unallocated [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForfeitedNonvestedAccountDecreaseForAdministrativeExpense",
+            "type": "Concept",
+            "label": "EBP, Forfeited Nonvested Account, Decrease from Administrative Expense",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNonparticipantDirectedInvestmentTableTextBlock",
+            "type": "Concept",
+            "label": "EBP, Nonparticipant-Directed Investment [Table Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionTotalInterestIncome",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Earnings on Investments, Total Interest",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanEmployerLiability",
+            "type": "Concept",
+            "label": "EBP, Liability to Employer",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EbpFairValueMeasurementDerivativeAccountingPolicyException",
+            "type": "Concept",
+            "label": "EBP, Fair Value Measurement, Derivative, Accounting Policy Exception [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseDecreaseForChangeInPlanInterestInMasterTrust",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase (Decrease) from Change in Plan Interest in Master Trust",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanPurchaseOfInsuranceContractExcludedFromPlanAssetPolicyTextBlock",
+            "type": "Concept",
+            "label": "EBP, Purchase of Insurance Contract, Excluded from Plan Asset [Policy Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNoteReceivableFromParticipantAllowanceForCreditLoss",
+            "type": "Concept",
+            "label": "EBP, Note Receivable from Participant, Allowance for Credit Loss (Deprecated 2027)",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanMasterTrustTextBlock",
+            "type": "Concept",
+            "label": "EBP, Master Trust [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanOtherRelatedPartyAndPartyInInterestMember",
+            "type": "Concept",
+            "label": "EBP, Other Related Party and Party-in-Interest [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500TextBlock",
+            "type": "Concept",
+            "label": "EBP, Reconciliation of Financial Statement to Form 5500 [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionDeemedDistribution",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Certain Deemed Distributions of Participant Loans",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanMasterTrustPolicyTextBlock",
+            "type": "Concept",
+            "label": "EBP, Master Trust [Policy Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpAccountingStandardUpdateAndChangeInAccountingPrincipleRetrospectiveApplicationImpracticableReasonAndAlternativeDescription",
+            "type": "Concept",
+            "label": "EBP, Accounting Standards Update and Change in Accounting Principle, Retrospective Application Impracticable, Reason and Alternative Method, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNonconsolidatedPlanInterestInMasterTrustMember",
+            "type": "Concept",
+            "label": "EBP, Nonconsolidated, Plan Interest in Master Trust [Member]",
+            "isAbstract": "true",
+            "dataType": "dtr-types:domainItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanExpensePolicyTextBlock",
+            "type": "Concept",
+            "label": "EBP, Expense [Policy Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500PaymentToParticipantIncreaseDecreaseForDeemedDistributionAbstract",
+            "type": "Concept",
+            "label": "EBP, Reconciliation to Form 5500, Payment to Participant, Increase (Decrease) from Deemed Distribution [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeCreditRiskContingentFeatureLiabilityPositionFairValue",
+            "type": "Concept",
+            "label": "EBP, Derivative, Credit Risk, Contingent Feature, Liability Position, Fair Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentPlanInterestInMasterTrustFairValue",
+            "type": "Concept",
+            "label": "EBP, Investment, Plan Interest in Master Trust, Fair Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanParticipantLoanInterestRate",
+            "type": "Concept",
+            "label": "EBP, Asset Held for Investment, Participant Loan, Interest Rate",
+            "isAbstract": "false",
+            "dataType": "dtr-types:percentItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500PaymentToParticipantIncreaseForDeemedDistributionCurrentPeriod",
+            "type": "Concept",
+            "label": "EBP, Reconciliation to Form 5500, Payment to Participant, Current Period, Increase from Deemed Distribution",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EbpRiskAndUncertaintyTableTextBlock",
+            "type": "Concept",
+            "label": "EBP, Risk and Uncertainty [Table Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanOtherAsset",
+            "type": "Concept",
+            "label": "EBP, Other Asset",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentLevel3ReconciliationPeriodIncreaseDecrease",
+            "type": "Concept",
+            "label": "EBP, Investment, Level 3 Reconciliation, Period Increase (Decrease)",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "CreatePlanSpecificMemberWithLegalEntityAxisForEmployeeBenefitPlanFilingInFollowingFormatEbpEmployerIdentificationNumbePlanNumberForExampleEbpMemberGuidance",
+            "type": "Concept",
+            "label": "Create Plan-specific [Member] with Legal Entity [Axis] in following format, [EBP] Employer Identification Number [0-9]{2}-[0-9]{7}-Plan Number [0-9]{3} (for example, standard label, EBP 12-3456789-001 [Member] with element name, EBP12-3456789-001Member) for employee benefit plan filing [Guidance] (Deprecated 2026)",
+            "isAbstract": "true",
+            "dataType": "dtr-types:guidanceItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpAccountingStandardUpdateAdoptionDate",
+            "type": "Concept",
+            "label": "EBP, Accounting Standards Update, Adoption Date",
+            "isAbstract": "false",
+            "dataType": "xbrli:dateItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500PaymentToParticipantIncreaseDecreaseForDeemedDistribution",
+            "type": "Concept",
+            "label": "EBP, Reconciliation to Form 5500, Payment to Participant, Increase (Decrease) from Deemed Distribution",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAssetHeldForInvestmentPlanInterestInMasterTrustParticipationStatusExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Asset Held for Investment, Plan Interest in Master Trust, Participation Status [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAccountingPolicyAbstract",
+            "type": "Concept",
+            "label": "EBP, Accounting Policy, Accounting Standards Update, and Change in Accounting Principle [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanLiability",
+            "type": "Concept",
+            "label": "EBP, Liability",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleAssetAcquiredAndDisposedAbstract",
+            "type": "Concept",
+            "label": "EBP, Schedule of Asset Acquired and Disposed of within Year [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDescriptionOfPlanAmendmentTextBlock",
+            "type": "Concept",
+            "label": "EBP, Description of Plan Amendment [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDebt",
+            "type": "Concept",
+            "label": "EBP, Debt",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDebtAbstract",
+            "type": "Concept",
+            "label": "EBP, Debt [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpChangeInNetAssetAvailableForBenefitIncreaseDecreaseFromGainLossOnInvestmentStatementOfChangeInNetAssetAvailableForBenefitExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase (Decrease) from Gain (Loss) on Investment, Statement of Change in Net Asset Available for Benefit [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDebtLineItems",
+            "type": "Concept",
+            "label": "EBP, Debt [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNonconsolidatedMasterTrustAndPlanInterestInMasterTrustAxis",
+            "type": "Concept",
+            "label": "EBP, Nonconsolidated, Master Trust and Plan Interest in Master Trust [Axis]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReceivableDerivativeVariationMargin",
+            "type": "Concept",
+            "label": "EBP, Derivative, Variation Margin, Receivable",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500NetAssetAvailableForBenefitAllocationToWithdrawingParticipantNotYetPaid",
+            "type": "Concept",
+            "label": "EBP, Reconciliation to Form 5500, Net Asset Available for Benefit, Allocation to Withdrawing Participant, Not yet Paid",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAssetAbstract",
+            "type": "Concept",
+            "label": "EBP, Asset [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDebtTextBlock",
+            "type": "Concept",
+            "label": "EBP, Debt [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanRiskAndUncertaintyTextBlock",
+            "type": "Concept",
+            "label": "EBP, Risk and Uncertainty [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionEmployerContribution",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Contributions, Employers",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseForAllocatedSharesForEsop",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase from Shares Allocated for ESOP",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionTransferToFromPlan",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Transfers of Assets to (from) this Plan",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpInvestmentLiabilityFairValueTypeExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Investment Liability, Fair Value, Type [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentAcquiredExcludingPlanInterestInMasterTrustCost",
+            "type": "Concept",
+            "label": "EBP, Investment Acquired, Excluding Plan Interest in Master Trust, Cost",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanIrsMinimumFundingWaiverGranted",
+            "type": "Concept",
+            "label": "EBP, IRS, Minimum Funding Waiver, Granted [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionReceivableParticipantContribution",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Receivables, Participant Contributions",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpSubsequentEventAbstract",
+            "type": "Concept",
+            "label": "EBP, Subsequent Event [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanPlanTerminationTextBlock",
+            "type": "Concept",
+            "label": "EBP, Plan Termination [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitDecrease",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Decrease",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseAbstract",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeCreditRiskContingentFeatureLiabilityPositionAssetForImmediateSettlementFairValue",
+            "type": "Concept",
+            "label": "EBP, Derivative, Credit Risk, Contingent Feature, Liability Position, Asset for Immediate Settlement, Fair Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfDelinquentParticipantContributionTable",
+            "type": "Concept",
+            "label": "EBP, Schedule of Delinquent Participant Contribution [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500Table",
+            "type": "Concept",
+            "label": "EBP, Reconciliation of Financial Statement to Form 5500 [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpCreditDerivativeRecourseProvisionDescription",
+            "type": "Concept",
+            "label": "EBP, Credit Derivative, Recourse Provision, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionOtherContribution",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Contributions, Other",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfDelinquentParticipantContributionTransferredLateToPlan",
+            "type": "Concept",
+            "label": "EBP, Schedule of Delinquent Participant Contribution, Transferred Late to Plan",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitDecreaseForInterestExpenseOnDebt",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Decrease from Interest Expense on Debt",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseForParticipantContribution",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase from Participant Contribution",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanLiquidationBasisOfAccountingTextBlock",
+            "type": "Concept",
+            "label": "EBP, Liquidation Basis of Accounting [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseDecreaseForPlanAmendment",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase (Decrease) from Plan Amendment",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanScheduleOfAssetHeldForInvestmentTable",
+            "type": "Concept",
+            "label": "EBP, Schedule of Asset Held for Investment [Table]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAssetHeldForInvestmentPartyInInterest",
+            "type": "Concept",
+            "label": "EBP, Asset Held for Investment, Party-in-Interest [true false]",
+            "isAbstract": "false",
+            "dataType": "xbrli:booleanItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EbpFairValueInvestmentNavAbstract",
+            "type": "Concept",
+            "label": "EBP, Fair Value, Investment, NAV [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanTaxStatusTextBlock",
+            "type": "Concept",
+            "label": "EBP, Tax Status [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanNumberOfParticipants",
+            "type": "Concept",
+            "label": "EBP, Number of Participants",
+            "isAbstract": "false",
+            "dataType": "xbrli:integerItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanParticipantContributionPretaxMaximumAnnualCompensationAmount",
+            "type": "Concept",
+            "label": "EBP, Participant Contribution, Pretax, Maximum Annual Compensation, Amount",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanRelatedPartyAndPartyInInterestTransactionsAbstract",
+            "type": "Concept",
+            "label": "EBP, Related Party and Party-in-Interest Transactions [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentMaturityDate",
+            "type": "Concept",
+            "label": "EBP, Investment, Maturity Date",
+            "isAbstract": "false",
+            "dataType": "xbrli:dateItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAssetHeldForInvestmentInvestmentExcludingPlanInterestInMasterTrustParticipationStatusExtensibleEnumeration",
+            "type": "Concept",
+            "label": "EBP, Asset Held for Investment, Investment, Excluding Plan Interest in Master Trust, Participation Status [Extensible Enumeration]",
+            "isAbstract": "false",
+            "dataType": "enum2:enumerationSetItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionUnrealizedAppreciationDepreciation",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Unrealized Appreciation (Depreciation) of Assets",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseDecreaseForInvestmentIncomeLossAfterInvestmentExpenseAbstract",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase (Decrease) from Investment Income (Loss), after Investment Expense [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeLiabilitySubjectToMasterNettingArrangementAfterOffsetAndDeduction",
+            "type": "Concept",
+            "label": "EBP, Derivative Liability, Subject to Master Netting Arrangement, after Offset and Deduction",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanAssetHeldForInvestment",
+            "type": "Concept",
+            "label": "EBP, Asset Held for Investment",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "instant",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EbpFairValueInvestmentNavInvesteeInvestmentStrategyDescription",
+            "type": "Concept",
+            "label": "EBP, Fair Value, Investment, NAV, Investee Investment Strategy, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitDecreaseAbstract",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Decrease [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentNumberOfShares",
+            "type": "Concept",
+            "label": "EBP, Investment, Number of Shares",
+            "isAbstract": "false",
+            "dataType": "xbrli:sharesItemType",
+            "periodType": "instant"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentExcludingPlanInterestInMasterTrustFairAndContractValueAbstract",
+            "type": "Concept",
+            "label": "EBP, Investment, Excluding Plan Interest in Master Trust, Fair and Contract Value [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanDebtGuaranteeDescription",
+            "type": "Concept",
+            "label": "EBP, Debt, Guarantee, Description",
+            "isAbstract": "false",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeAssetSubjectToMasterNettingArrangementAfterOffsetAndDeductionAbstract",
+            "type": "Concept",
+            "label": "EBP, Derivative Asset, Subject to Master Netting Arrangement, after Offset and Deduction [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EbpDerivativeLiabilitySubjectToMasterNettingArrangementAfterOffsetAbstract",
+            "type": "Concept",
+            "label": "EBP, Derivative Liability, Subject to Master Netting Arrangement, after Offset [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanChangeInNetAssetAvailableForBenefitIncreaseForParticipantContributionAbstract",
+            "type": "Concept",
+            "label": "EBP, Change in Net Asset Available for Benefit, Increase from Participant Contribution [Abstract]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanRelatedPartyAndPartyInInterestTransactionsTextBlock",
+            "type": "Concept",
+            "label": "EBP, Related Party and Party-in-Interest Transactions [Text Block]",
+            "isAbstract": "false",
+            "dataType": "dtr-types:textBlockItemType",
+            "periodType": "duration"
+        },
+        {
+            "localName": "EmployeeBenefitPlanInvestmentSoldExcludingPlanInterestInMasterTrustCurrentValue",
+            "type": "Concept",
+            "label": "EBP, Investment Sold, Excluding Plan Interest in Master Trust, Current Value",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "credit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanForm5500CaptionTotalIncome",
+            "type": "Concept",
+            "label": "EBP, Form 5500 Caption, Total Income",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanReconciliationToForm5500PaymentToParticipantDecreaseForDeemedDistributionPriorPeriod",
+            "type": "Concept",
+            "label": "EBP, Reconciliation to Form 5500, Payment to Participant, Prior Period, Decrease from Deemed Distribution",
+            "isAbstract": "false",
+            "dataType": "xbrli:monetaryItemType",
+            "periodType": "duration",
+            "balanceType": "debit"
+        },
+        {
+            "localName": "EmployeeBenefitPlanContributionLineItems",
+            "type": "Concept",
+            "label": "EBP, Contribution [Line Items]",
+            "isAbstract": "true",
+            "dataType": "xbrli:stringItemType",
+            "periodType": "duration"
+        }
+    ]
+}
