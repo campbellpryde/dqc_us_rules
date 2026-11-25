@@ -44,7 +44,8 @@ constant $INVESTMENT_ALTERNATIVE_REQUIRED_KEYS = set('GEO','IND')
 constant $INVESTMENT_STRICT_DOMAIN_KEYS = set('AFF','GEB','GEO','TYP')
 
 /** Only the labels that use the pipe delimited key-value format are evaluated by this rule set. A label uses the key-value format when it contains a '|' character followed by at least one '=' character (SecurityName|KEY1=value1 KEY2=value2 ...). **/
-constant $INVESTMENT_KEY_VALUE_IDENTIFIERS = (filter $DIM_MEMBERS where is_key_value_identifier($item))
+/** The members are taken from every fact reported on the InvestmentIdentifierAxis, not just InvestmentOwnedAtCost, so that a member used only with other concepts is still evaluated. The to-set is applied to the list of dimension values (strings) returned from the facts, not to the facts themselves, so each member label appears once. **/
+constant $INVESTMENT_KEY_VALUE_IDENTIFIERS = (filter (filter list([covered @InvestmentIdentifierAxis = *]) returns $item.dimension(InvestmentIdentifierAxis)).to-set where is_key_value_identifier($item))
 
 /**constant $INVESTMENT_KEY_VALUE_IDENTIFIERS = (filter $DIM_MEMBERS where $item.contains('|'))**/
 
