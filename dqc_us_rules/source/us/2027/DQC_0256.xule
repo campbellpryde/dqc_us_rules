@@ -1,0 +1,113 @@
+/**
+DQC Rules
+ (c) Copyright 2017 - 2026, XBRL US Inc. All rights reserved.
+ See https://xbrl.us/dqc-license for license information.
+ See https://xbrl.us/dqc-patent for patent infringement notice.
+Taxonomy: US GAAP 2026
+**/
+
+
+rule-name-prefix DQC
+
+/** V32 Release **/
+/**
+
+Overview: The SEC Division of Economic and Risk Analysis has identified that Business Development Companies (BDCs) have tagged the investment income - interest and investment income - dividend line items in the consolidated statements of operations with the elements InvestmentIncomeInterest and InvestmentIncomeDividend.  These elements are defined as income on nonoperating securities.  For a BDC investment income is operating income and the appropriate elements are InterestIncomeOperating and DividendIncomeOperating.
+
+See: https://www.sec.gov/about/divisions-offices/division-economic-risk-analysis/260827-dqr-inappropriate-elements-used-tag-bdc-consolidated-statements-operations
+
+Rule US.0256.10979 identifies BDC filings using the element InvestmentIncomeInterest.  The element InterestIncomeOperating should be used.
+
+Rule US.0256.10980 identifies BDC filings using the element InvestmentIncomeDividend.  The element DividendIncomeOperating should be used.
+
+Rule US.0256.10981 identifies BDC filings using the element InvestmentIncomeInterestAndDividend.  The element InterestAndDividendIncomeOperating should be used.
+
+A filing is identified as a BDC filing using the constant $BDC_FLAG which identifies filings that include a Schedule of Investments as a financial statement.
+
+**/
+
+ASSERT US.0256.10979 SATISFIED
+
+$rule_id = (rule-name().split('.'))[rule-name().split('.').length];
+
+/** DQCRT RULE **/
+if not $BDC_FLAG
+	skip
+else
+
+$fact1 = {@concept = InvestmentIncomeInterest}
+
+exists($fact1)
+
+message
+"The filer is a business development company and has reported a value of {$fact1} using the element InvestmentIncomeInterest.  This element is defined as interest income on nonoperating securities.  For a business development company interest earned on investments is operating income and should be tagged using the element InterestIncomeOperating. Please replace the element InvestmentIncomeInterest with InterestIncomeOperating.
+
+Concept : {$fact1.concept.name}
+Value : {$fact1}
+Period : {$fact1.period}
+Dimensions : {$fact1.dimensions.join(', ','=')}
+
+Rule Element Id:{$rule_id}
+Rule version: {$ruleVersion}"
+
+severity error
+rule-focus $fact1
+effectiveDate $effective_dates[$rule_id]
+
+
+ASSERT US.0256.10980 SATISFIED
+
+$rule_id = (rule-name().split('.'))[rule-name().split('.').length];
+
+/** DQCRT RULE **/
+if not $BDC_FLAG
+	skip
+else
+
+$fact1 = {@concept = InvestmentIncomeDividend}
+
+exists($fact1)
+
+message
+"The filer is a business development company and has reported a value of {$fact1} using the element InvestmentIncomeDividend.  This element is defined as dividend income on nonoperating securities.  For a business development company dividends earned on investments are operating income and should be tagged using the element DividendIncomeOperating. Please replace the element InvestmentIncomeDividend with DividendIncomeOperating.
+
+Concept : {$fact1.concept.name}
+Value : {$fact1}
+Period : {$fact1.period}
+Dimensions : {$fact1.dimensions.join(', ','=')}
+
+Rule Element Id:{$rule_id}
+Rule version: {$ruleVersion}"
+
+severity error
+rule-focus $fact1
+effectiveDate $effective_dates[$rule_id]
+
+
+ASSERT US.0256.10981 SATISFIED
+
+$rule_id = (rule-name().split('.'))[rule-name().split('.').length];
+
+/** DQCRT RULE **/
+if not $BDC_FLAG
+	skip
+else
+
+$fact1 = {@concept = InvestmentIncomeInterestAndDividend}
+
+exists($fact1)
+
+message
+"The filer is a business development company and has reported a value of {$fact1} using the element InvestmentIncomeInterestAndDividend.  This element is defined as interest and dividend income on nonoperating securities.  For a business development company interest and dividends earned on investments are operating income and should be tagged using the element InterestAndDividendIncomeOperating. Please replace the element InvestmentIncomeInterestAndDividend with InterestAndDividendIncomeOperating.
+
+Concept : {$fact1.concept.name}
+Value : {$fact1}
+Period : {$fact1.period}
+Dimensions : {$fact1.dimensions.join(', ','=')}
+
+Rule Element Id:{$rule_id}
+Rule version: {$ruleVersion}"
+
+severity error
+rule-focus $fact1
+effectiveDate $effective_dates[$rule_id]

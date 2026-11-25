@@ -1,0 +1,42 @@
+/**
+DQC Rules
+ (c) Copyright 2017 - 2025, XBRL US Inc. All rights reserved.
+ See https://xbrl.us/dqc-license for license information.
+ See https://xbrl.us/dqc-patent for patent infringement notice.
+Taxonomy: US GAAP 2024
+**/
+
+
+rule-name-prefix DQC
+
+/** V31 Release **/
+
+Assert US.0245.10947 satisfied
+
+$rule_id = (rule-name().split('.'))[rule-name().split('.').length];
+
+/** DATA QUALITY REMINDER FROM SEC GUIDANCE - The rule should look at the Statement ELR using the. constant $PRES_NETWORKS  and identifiy if the Consolidated Entities [Axis] is used. We would expect that this is only used in the notes and not in the Statement ELR. The error message should state that the filer should use the legal entity axis for teh statement section and not the Consolidated Entities [Axis] in the message.  The rule should identify those ELR where the element Consolidated Entities [Axis] appears in the parent-child relationships and flag the statement with this error.
+
+ The SEC comment was:
+
+ "Consolidated Entities [Axis] is intended to be used for the values in a consolidating schedule. It identifies and disaggregates financial data for specific entities within a consolidated group, such as the parent, subsidiaries, or variable interest entities. Staff has observed certain issuers improperly using the "Consolidated Entities [Axis]"" element to tag financial statements that are presented separately from the issuer's consolidated or combined financial statements. For example, one trust included the financial statements of both the trust and an operating entity through which the trust conducts its operations in its filing. The trust tagged the financial statements of the operating entity with Consolidated Entities [Axis] to differentiate them from those of the trust itself. However, as the operating entity is a distinct legal entity with its own CIK, Legal Entity [Axis], which is intended to be used only to identify legal entities, should be applied. In a different instance, a trust with multiple distinct series of units tagged each series' financial statements with "Consolidated Entities [Axis]." Because each series possesses its own investment objectives, strategies, and financial results, the trust should have treated each series as a separate reporting entity and used the "Legal Entity [Axis]" element.
+
+Additionally, staff noted that certain issuers tagged receivables from affiliates or investments in related parties with Consolidated Entities [Axis] and Affiliated Entity [Member]. The information about related parties or affiliated entities should instead be tagged with Related and Nonrelated Parties [Axis] and Affiliated Entity [Member].."**/
+
+for $presNetwork in $STATEMENT_PRES_NETWORKS.sort
+        $presConceptItems = $presNetwork.concept-names;
+        if $presConceptItems.contains(srt:ConsolidatedEntitiesAxis)
+            true
+        else
+            skip
+
+message
+"
+The filer has reported Consolidated Entities [Axis] in the statement section of the filing in the role {$presNetwork.role.description}. The Consolidated Entities [Axis] is intended to be used for the values in a consolidating schedule and should not be used to identify legal entities in the statement section of the filing. The filer should use the Legal Entity [Axis] to identify legal entities in the statement section of the filing and not use the Consolidated Entities [Axis] in this section of the filing.
+
+Rule Element Id:{$rule_id}
+Rule version: {$ruleVersion}"
+
+severity error  
+effectiveDate $effective_dates[$rule_id]
+

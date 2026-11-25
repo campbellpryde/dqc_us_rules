@@ -1,0 +1,72 @@
+/**
+DQC Rules
+ (c) Copyright 2017 - 2026, XBRL US Inc. All rights reserved.
+ See https://xbrl.us/dqc-license for license information.
+ See https://xbrl.us/dqc-patent for patent infringement notice.
+Taxonomy: US GAAP 2026
+**/
+
+
+rule-name-prefix DQC
+
+ASSERT US.0244.10946 SATISFIED
+
+$rule_id = (rule-name().split('.'))[rule-name().split('.').length];
+
+/** DQCRT RULE **/
+if not applicable_form(rule-name())
+	skip
+else
+
+/** DATA QUALITY REMINDER FROM SEC GUIDANCE - For 606 revenue  look in the disclosure sections of the filing and determine if the elements us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax and RevenueFromContractWithCustomerIncludingAssessedTax have been used with dimensional members in the footnotes. Then look at the Statement items to ensure that the income statement includes either the line items use either us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax or RevenueFromContractWithCustomerIncludingAssessedTax. 
+
+SO check that can use either of the elements interchangeably between the notes and the statement. The error message should link back to the guidance published by the SEC at https://xbrl.fasb.org/impguidance/Rev2_TIG/revenue_2.pdf.  The SEC comment was "Inappropriate use of custom element to tag noninterest income line items within the scope of Topic 606. The appropriate approach is to use either us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax or us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, as applicable, in conjunction with Product and Service [Axis] and an appropriate custom member.
+
+Inconsistent application of tags between noninterest income line items that are presented on the income statement and those disclosed in the note. For instance, certain banks tagged the in-scope noninterest income line items on the income statement with custom concepts. However, identical items - having the same description and amount - in the note disclosure, were tagged with standard us-gaap:RevenueFromContractWithCustomerExcludingAssessedtax, along with Product and Service [Axis] and custom members. Tagging should be consistent across both presentations."**/
+
+// Standard revenue elements for Topic 606
+$valid_line_items = set(RevenueFromContractWithCustomerIncludingAssessedTax, RevenueFromContractWithCustomerExcludingAssessedTax);
+
+// Get all statement cubes from the taxonomy
+
+$RevenueInNotes = list({nonils @concept in $valid_line_items @srt:ProductOrServiceAxis = *})
+
+for $presNetwork in $STATEMENT_PRES_NETWORKS.sort
+        $presConceptItems = $presNetwork.concept-names;
+        if $presConceptItems.contains(IncomeStatementAbstract)
+            if $presConceptItems.contains(RevenueFromContractWithCustomerIncludingAssessedTax) or $presConceptItems.contains(RevenueFromContractWithCustomerExcludingAssessedTax)
+                skip
+            else
+                $RevenueItemsInStatement = filter $presConceptItems where taxonomy().concept($item).is-monetary and taxonomy().concept($item).period-type == duration and taxonomy().concept($item).balance == credit;
+
+                //Added @srt:ProductOrServiceAxis to take this dimension out of alignment so facts without product or service would match with ones that do have the product or service dimension. 
+                $RevenueItemsInStatementFacts = list({nonils @concept in $RevenueItemsInStatement @srt:ProductOrServiceAxis})
+                // If the values are the same then it is likely that the filer is using the standard revenue elements in the notes and custom revenue elements in the statement.
+                for $RevItem in $RevenueInNotes
+                        $match = filter $RevenueItemsInStatementFacts where $RevItem == $item
+                        if exists($match)
+                            true
+                        else
+                            false
+        else
+            skip
+
+
+message
+"The filing reports values for {$RevItem.concept.name } with a value of {$RevItem} in the notes to the financial, but does not report values using these items in the Income Statement  defined in section {$presNetwork.role.description}.  The filing should not have inconsistent application of tags between  income line items that are presented on the income statement and those disclosed in the note. 
+
+If the section is not the Income Statement then change the abstract element IncomeStatementAbstract to an appropriate abstract element for the section of the filing. 
+
+See SEC guidance: https://xbrl.fasb.org/impguidance/Rev2_TIG/revenue_2.pdf
+
+Concept : {$RevItem.concept.name}
+Value : {$RevItem}
+Period : {$RevItem.period}
+Dimensions : {$RevItem.dimensions.join(', ','=')}
+
+Rule Element Id:{$rule_id}
+Rule version: {$ruleVersion}"
+
+severity error
+rule-focus $RevItem
+effectiveDate $effective_dates[$rule_id]

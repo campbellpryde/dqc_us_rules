@@ -1,0 +1,198 @@
+/**
+DQC Rules
+ (c) Copyright 2017 - 2026, XBRL US Inc. All rights reserved.
+ See https://xbrl.us/dqc-license for license information.
+ See https://xbrl.us/dqc-patent for patent infringement notice.
+Taxonomy: US GAAP 2026
+**/
+
+
+rule-name-prefix DQC
+
+/** V32 Release **/
+/**
+
+Overview: Roll forwards are not represented in the calculation linkbase, so XBRL calculation validation does not check that the opening balance plus the movements during the period equals the closing balance.  This rule set checks that common roll forwards reported in a filing calculate.
+
+Rule US.0255.10976 checks roll forwards where the US GAAP taxonomy defines a single element representing the net change in the balance during the period.  The rule checks that the opening balance plus the net change equals the closing balance.  The roll forwards checked are defined in the constant $SIMPLE_ROLL_FORWARDS.
+
+Rule US.0255.10977 checks the share option roll forward.  The rule checks that the number of options outstanding at the start of the period, plus options granted, less options exercised, less options forfeited and expired, plus other increases (decreases) equals the number of options outstanding at the end of the period.
+
+Rule US.0255.10978 checks the nonvested equity instruments other than options roll forward (such as restricted stock units).  The rule checks that the number of nonvested instruments at the start of the period, plus instruments granted, less instruments vested, less instruments forfeited equals the number of nonvested instruments at the end of the period.
+
+Approach: The rule uses the duration fact for the movement in the period to determine the opening balance (the instant at the start of the period) and the closing balance (the instant at the end of the period).  The facts used in each roll forward must have the same dimensions and unit.  If either the opening or the closing balance is not reported the rule does not run.
+**/
+
+/** Each entry is a list of the balance element and the element representing the net change in that balance during the period **/
+constant $SIMPLE_ROLL_FORWARDS = list(
+	list(Goodwill, GoodwillPeriodIncreaseDecrease),
+	list(UnrecognizedTaxBenefits, UnrecognizedTaxBenefitsPeriodIncreaseDecrease),
+	list(DeferredTaxAssetsValuationAllowance, ValuationAllowanceDeferredTaxAssetChangeInAmount),
+	list(AssetRetirementObligation, AssetRetirementObligationPeriodIncreaseDecrease),
+	list(DefinedBenefitPlanBenefitObligation, DefinedBenefitPlanBenefitObligationPeriodIncreaseDecrease),
+	list(DefinedBenefitPlanFairValueOfPlanAssets, DefinedBenefitPlanFairValueOfPlanAssetsPeriodIncreaseDecrease),
+	list(ProductWarrantyAccrual, ProductWarrantyAccrualPeriodIncreaseDecrease),
+	list(RestructuringReserve, RestructuringReservePeriodIncreaseDecrease),
+	list(CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents, CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffectContinuingOperations),
+	list(CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations, CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect),
+	list(RealEstateGrossAtCarryingValue, RealEstatePeriodIncreaseDecrease),
+	list(RealEstateAccumulatedDepreciation, RealEstateAccumulatedDepreciationPeriodIncreaseDecrease)
+	)
+
+ASSERT US.0255.10976 SATISFIED
+
+$rule_id = (rule-name().split('.'))[rule-name().split('.').length];
+
+/** DQCRT RULE **/
+if not applicable_form(rule-name())
+	skip
+else
+
+for $rollForward in $SIMPLE_ROLL_FORWARDS
+	$balanceConcept = $rollForward[1];
+	$changeConcept = $rollForward[2];
+
+	$change = {nonils @concept = $changeConcept @period = *}
+
+	$opening = [nonils @concept = $balanceConcept @period = $change.period.start]
+	$closing = [nonils @concept = $balanceConcept @period = $change.period.end]
+
+	if $opening == none or $closing == none
+		skip
+	else
+		$expectedClosing = $opening + $change;
+		tolerance_for_decimals($closing, $expectedClosing, 2)
+
+message
+"The roll forward of {$balanceConcept} does not calculate. The opening balance of {$balanceConcept} plus the change in the period reported using {$changeConcept} should equal the closing balance of {$balanceConcept}.
+
+Opening balance ({$opening.period}) : {$opening}
+Change in period ({$change.period}) : {$change}
+Expected closing balance : {$expectedClosing}
+Reported closing balance ({$closing.period}) : {$closing}
+
+Please check that the values of the opening balance, closing balance and change in the period are correct, that they have been reported with the correct sign, and that the facts are reported with the same dimensions.
+
+Dimensions : {$change.dimensions.join(', ','=')}
+Unit : {$change.unit}
+
+Rule Element Id:{$rule_id}
+Rule version: {$ruleVersion}"
+
+severity error
+rule-focus $closing
+effectiveDate $effective_dates[$rule_id]
+
+
+ASSERT US.0255.10977 SATISFIED
+
+$rule_id = (rule-name().split('.'))[rule-name().split('.').length];
+
+/** DQCRT RULE **/
+if not applicable_form(rule-name())
+	skip
+else
+
+$grants = {nonils @concept = ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsGrantsInPeriodGross @period = *}
+
+$opening = [nonils @concept = ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingNumber @period = $grants.period.start]
+$closing = [nonils @concept = ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingNumber @period = $grants.period.end]
+
+$exercises = [nonils @concept = StockIssuedDuringPeriodSharesStockOptionsExercised @period = $grants.period]
+$forfeituresAndExpirations = [nonils @concept = ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsForfeituresAndExpirationsInPeriod @period = $grants.period]
+$forfeitures = [nonils @concept = ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsForfeituresInPeriod @period = $grants.period]
+$expirations = [nonils @concept = ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExpirationsInPeriod @period = $grants.period]
+$other = [nonils @concept = ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOtherIncreasesDecreasesInPeriod @period = $grants.period]
+
+/** If the combined forfeitures and expirations element is reported use it, otherwise use the separate elements **/
+$totalForfeituresAndExpirations = if exists($forfeituresAndExpirations)
+									$forfeituresAndExpirations
+								else
+									first-value($forfeitures, 0) + first-value($expirations, 0)
+
+if $opening == none or $closing == none
+	skip
+else
+
+	$minDecimals = min(list(for $x in list($opening, $grants, $exercises, $forfeituresAndExpirations, $forfeitures, $expirations, $other, $closing)
+								if $x == none 
+									skip
+								else
+									$x.decimals));
+	$expectedClosing = $opening + $grants - first-value($exercises, 0) - $totalForfeituresAndExpirations + first-value($other, 0);
+	tolerance_for_decimals_comp($closing, $expectedClosing, $minDecimals, 2)
+
+message
+"The share option roll forward does not calculate. The number of options outstanding at the start of the period plus options granted, less options exercised, less options forfeited and expired, plus other increases (decreases) should equal the number of options outstanding at the end of the period.
+
+Options outstanding at {$opening.period} : {$opening}
+Options granted ({$grants.period}) : {$grants}
+Options exercised : {first-value($exercises, 0)}
+Options forfeited and expired : {$totalForfeituresAndExpirations}
+Other increases (decreases) : {first-value($other, 0)}
+Expected options outstanding : {$expectedClosing}
+Reported options outstanding at {$closing.period} : {$closing}
+
+The rule uses the following elements: ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingNumber, ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsGrantsInPeriodGross, StockIssuedDuringPeriodSharesStockOptionsExercised, ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsForfeituresAndExpirationsInPeriod (or ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsForfeituresInPeriod and ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExpirationsInPeriod) and ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOtherIncreasesDecreasesInPeriod.  Please check that the values are correct, are reported with the correct sign, and that the facts are reported with the same dimensions.
+
+Values are compared assuming all values have a decimal value of {$minDecimals} to account for rounding and precision differences across the filing.
+
+Dimensions : {$grants.dimensions.join(', ','=')}
+
+Rule Element Id:{$rule_id}
+Rule version: {$ruleVersion}"
+
+severity error
+rule-focus $closing
+effectiveDate $effective_dates[$rule_id]
+
+
+ASSERT US.0255.10978 SATISFIED
+
+$rule_id = (rule-name().split('.'))[rule-name().split('.').length];
+
+/** DQCRT RULE **/
+if not applicable_form(rule-name())
+	skip
+else
+
+$grants = {nonils @concept = ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod @period = *}
+
+$opening = [nonils @concept = ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNonvestedNumber @period = $grants.period.start]
+$closing = [nonils @concept = ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNonvestedNumber @period = $grants.period.end]
+
+$vested = [nonils @concept = ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedInPeriod @period = $grants.period]
+$forfeited = [nonils @concept = ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsForfeitedInPeriod @period = $grants.period]
+
+if $opening == none or $closing == none
+	skip
+else
+	$minDecimals = min(list(for $x in list($opening, $grants, $vested, $forfeited, $closing)
+								if $x == none 
+									skip
+								else
+									$x.decimals));
+
+	$expectedClosing = $opening + $grants - first-value($vested, 0) - first-value($forfeited, 0);
+	tolerance_for_decimals_comp($closing, $expectedClosing, $minDecimals, 2)
+
+message
+"The roll forward of nonvested equity instruments other than options does not calculate. The number of nonvested instruments at the start of the period plus instruments granted, less instruments vested, less instruments forfeited should equal the number of nonvested instruments at the end of the period.
+
+Nonvested at {$opening.period} : {$opening}
+Granted ({$grants.period}) : {$grants}
+Vested : {first-value($vested, 0)}
+Forfeited : {first-value($forfeited, 0)}
+Expected nonvested : {$expectedClosing}
+Reported nonvested at {$closing.period} : {$closing}
+
+Please check that the values are correct, are reported with the correct sign, and that the facts are reported with the same dimensions. If the roll forward includes other movements such as performance adjustments, this rule may not be applicable.
+
+Dimensions : {$grants.dimensions.join(', ','=')}
+
+Rule Element Id:{$rule_id}
+Rule version: {$ruleVersion}"
+
+severity error
+rule-focus $closing
+effectiveDate $effective_dates[$rule_id]

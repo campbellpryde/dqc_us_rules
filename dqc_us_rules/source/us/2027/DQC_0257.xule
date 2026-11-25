@@ -1,0 +1,79 @@
+/**
+DQC Rules
+ (c) Copyright 2017 - 2026, XBRL US Inc. All rights reserved.
+ See https://xbrl.us/dqc-license for license information.
+ See https://xbrl.us/dqc-patent for patent infringement notice.
+Taxonomy: US GAAP 2026
+**/
+
+
+rule-name-prefix DQC
+
+/** V32 Release **/
+/**
+
+Overview: The SEC Division of Economic and Risk Analysis has identified that Business Development Companies (BDCs) have tagged the Total investment income, Net investment income before tax and Net investment income after tax line items in the consolidated statements of operations with the element InvestmentIncomeNet.  This element is defined as interest and dividend income on nonoperating securities after investment expense.  The appropriate elements for these line items are:
+
+Total investment income                 GrossInvestmentIncomeOperating
+Net investment income before tax        NetInvestmentIncome
+Net investment income after tax         InvestmentIncomeOperatingAfterExpenseAndTax
+
+See: https://www.sec.gov/about/divisions-offices/division-economic-risk-analysis/260827-dqr-inappropriate-elements-used-tag-bdc-consolidated-statements-operations
+
+Rule US.0257.10982 identifies BDC filings using the element InvestmentIncomeNet in the financial statements. The rule uses the label of the element in the statement to suggest the appropriate replacement element.
+
+A filing is identified as a BDC filing using the constant $BDC_FLAG which identifies filings that include a Schedule of Investments as a financial statement.
+
+**/
+
+ASSERT US.0257.10982 SATISFIED
+
+$rule_id = (rule-name().split('.'))[rule-name().split('.').length];
+
+/** DQCRT RULE **/
+if not $BDC_FLAG
+	skip
+else
+
+$statementNetworks = filter $STATEMENT_PRES_NETWORKS where $item.concept-names.contains(InvestmentIncomeNet)
+
+for $network in $statementNetworks.sort
+	/** Get the label used for the element in the statement **/
+	$labels = (filter $network.relationships where $item.target.name == InvestmentIncomeNet returns $item.target.label($item.preferred-label).text).to-set
+
+	for $label in $labels
+		$fact1 = first(list({covered @concept = InvestmentIncomeNet}))
+
+		$suggestedElement = suggested_element($label)
+
+		$fact1 != none
+
+message
+"The filer is a business development company and has used the element InvestmentIncomeNet with the label \"{$label}\" in the statement \"{$network.role.description}\".  The element InvestmentIncomeNet is defined as interest and dividend income on nonoperating securities after investment expense and is not appropriate for a business development company where investment income is operating income. Based on the label of the line item the appropriate element is {$suggestedElement}.
+
+The appropriate elements for investment income line items reported by a business development company are:
+Total investment income : GrossInvestmentIncomeOperating
+Net investment income before tax : NetInvestmentIncome
+Net investment income after tax : InvestmentIncomeOperatingAfterExpenseAndTax
+
+Please replace the element InvestmentIncomeNet with the appropriate element.
+
+Rule Element Id:{$rule_id}
+Rule version: {$ruleVersion}"
+
+severity error
+rule-focus $fact1
+effectiveDate $effective_dates[$rule_id]
+
+
+/** Determine the appropriate element based on the label used for the line item **/
+function suggested_element($label)
+	$labelLower = $label.lower-case;
+	if $labelLower.contains('total investment income') or $labelLower.contains('gross investment income') or ($labelLower.contains('total') and not $labelLower.contains('net'))
+		'GrossInvestmentIncomeOperating'
+	else if $labelLower.contains('before') and ($labelLower.contains('tax') or $labelLower.contains('excise'))
+		'NetInvestmentIncome'
+	else if $labelLower.contains('after') and ($labelLower.contains('tax') or $labelLower.contains('excise'))
+		'InvestmentIncomeOperatingAfterExpenseAndTax'
+	else
+		'NetInvestmentIncome (if the amount is before tax) or InvestmentIncomeOperatingAfterExpenseAndTax (if the amount is after tax)'

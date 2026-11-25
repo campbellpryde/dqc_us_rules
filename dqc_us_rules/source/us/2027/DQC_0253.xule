@@ -1,0 +1,53 @@
+/**
+DQC Rules
+ (c) Copyright 2017 - 2026, XBRL US Inc. All rights reserved.
+ See https://xbrl.us/dqc-license for license information.
+ See https://xbrl.us/dqc-patent for patent infringement notice.
+Taxonomy: US GAAP 2026
+**/
+
+
+rule-name-prefix DQC
+
+/** V32 Release **/
+/**
+
+Overview: Schedule III Real Estate and Accumulated Depreciation (SEC Regulation S-X 12-28) reports information by property.  The appropriate axis to identify each property in this schedule is srt:RealEstateAndAccumulatedDepreciationDescriptionOfPropertyAxis.  When needed the type of property can be identified using srt:MortgageLoansOnRealEstateDescriptionTypeOfPropertyAxis and the location of the property can be identified using srt:StatementGeographicalAxis.
+
+Filers have been using inappropriate axes to identify the properties in Schedule III such as BusinessAcquisitionAxis, RealEstatePropertiesAxis, PropertyPlantAndEquipmentByTypeAxis and srt:ScheduleOfEquityMethodInvestmentEquityMethodInvesteeNameAxis.
+
+Rule US.0253.10973 checks that the table used for Schedule III (srt:RealEstateAndAccumulatedDepreciationByPropertyTable) does not include any of these inappropriate axes.
+
+**/
+
+constant $SCHEDULE_III_INCORRECT_AXES = set(BusinessAcquisitionAxis,
+											RealEstatePropertiesAxis,
+											PropertyPlantAndEquipmentByTypeAxis,
+											srt:ScheduleOfEquityMethodInvestmentEquityMethodInvesteeNameAxis)
+
+ASSERT US.0253.10973 SATISFIED
+
+$rule_id = (rule-name().split('.'))[rule-name().split('.').length];
+
+/** DQCRT RULE **/
+if not applicable_form(rule-name())
+	skip
+else
+
+$scheduleIIICubes = filter taxonomy().cubes where $item.cube-concept.name == srt:RealEstateAndAccumulatedDepreciationByPropertyTable
+
+for $cube in $scheduleIIICubes
+	$incorrectAxes = $cube.dimensions.concept.name.to-set intersect $SCHEDULE_III_INCORRECT_AXES
+	$correctAxes = $cube.dimensions.concept.name.to-set intersect set(srt:RealEstateAndAccumulatedDepreciationDescriptionOfPropertyAxis)
+
+	$incorrectAxes.length > 0 and $correctAxes.length == 0
+
+message
+"The Schedule III table srt:RealEstateAndAccumulatedDepreciationByPropertyTable in the section \"{$cube.drs-role.description}\" includes the axis {$incorrectAxes.sort.join(', ')}.  This axis should not be used to identify properties reported in Schedule III Real Estate and Accumulated Depreciation.  The appropriate axis to identify each property in this schedule is srt:RealEstateAndAccumulatedDepreciationDescriptionOfPropertyAxis.  When needed, the type of property can be identified using the srt:MortgageLoansOnRealEstateDescriptionTypeOfPropertyAxis and the location of the property can be identified using srt:StatementGeographicalAxis.  Please replace the axis {$incorrectAxes.sort.join(', ')} with the appropriate axis.
+
+Rule Element Id:{$rule_id}
+Rule version: {$ruleVersion}"
+
+severity error
+
+effectiveDate $effective_dates[$rule_id]

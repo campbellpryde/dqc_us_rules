@@ -1,0 +1,52 @@
+/**
+DQC Rules
+ (c) Copyright 2017 - 2026, XBRL US Inc. All rights reserved.
+ See https://xbrl.us/dqc-license for license information.
+ See https://xbrl.us/dqc-patent for patent infringement notice.
+Taxonomy: US GAAP 2026
+**/
+
+
+rule-name-prefix DQC
+
+/** V32 Release **/
+/**
+
+Overview: The SEC Division of Economic and Risk Analysis has identified that Business Development Companies (BDCs) have tagged the Total expenses before waivers or deductions line item in the consolidated statements of operations with the element OperatingExpenses.  The appropriate element for this line item is InvestmentIncomeInvestmentExpense.  Total expenses after fee waivers and reimbursements should be tagged with InvestmentCompanyExpenseAfterReductionOfFeeWaiverAndReimbursement.  In the US GAAP taxonomy calculation InvestmentCompanyExpenseAfterReductionOfFeeWaiverAndReimbursement = InvestmentIncomeInvestmentExpense - InvestmentCompanyContractualAndVoluntaryFeesWaived - InvestmentCompanyExpenseOffsetArrangement - InvestmentCompanyFeePaidIndirectly.
+
+See: https://www.sec.gov/about/divisions-offices/division-economic-risk-analysis/260827-dqr-inappropriate-elements-used-tag-bdc-consolidated-statements-operations
+
+Rule US.0258.10983 identifies BDC filings using the element OperatingExpenses in the financial statements.
+
+A filing is identified as a BDC filing using the constant $BDC_FLAG which identifies filings that include a Schedule of Investments as a financial statement.
+
+**/
+
+ASSERT US.0258.10983 SATISFIED
+
+$rule_id = (rule-name().split('.'))[rule-name().split('.').length];
+
+/** DQCRT RULE **/
+if not $BDC_FLAG
+	skip
+else
+
+$statementNetworks = filter $STATEMENT_PRES_NETWORKS where $item.concept-names.contains(OperatingExpenses)
+
+for $network in $statementNetworks.sort
+	$labels = (filter $network.relationships where $item.target.name == OperatingExpenses returns $item.target.label($item.preferred-label).text).to-set
+
+	for $label in $labels
+		$fact1 = first(list({covered @concept = OperatingExpenses}))
+
+		$fact1 != none
+
+message
+"The filer is a business development company and has used the element OperatingExpenses with the label \"{$label}\" in the statement \"{$network.role.description}\".  For a business development company total expenses before fee waivers and deductions should be tagged with the element InvestmentIncomeInvestmentExpense.  If the line item represents total expenses after fee waivers and reimbursements, the element InvestmentCompanyExpenseAfterReductionOfFeeWaiverAndReimbursement should be used.  Please replace the element OperatingExpenses with the appropriate element.
+
+Rule Element Id:{$rule_id}
+Rule version: {$ruleVersion}"
+
+severity error
+rule-focus $fact1
+effectiveDate $effective_dates[$rule_id]
