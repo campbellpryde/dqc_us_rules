@@ -1,6 +1,10 @@
 {
 	"folders": [
 		{
+			"path": "source/us/2027",
+			"name": "US-2027"
+		},
+		{
 			"path": "source/us/2026",
 			"name": "US-2026"
 		},
