@@ -18,7 +18,7 @@ The rule defines a dictionary of classes such as classes of stock , geographies,
  CONSTANT $DIMENSION_CLASS_DICT = dict(
                                 list("Geography", list(srt:StatementGeographicalAxis, StatutoryAccountingPracticesByJurisdictionAxis, IncomeTaxAuthorityAxis)),
                                 list("EquityComponents", list(PartnerCapitalComponentsAxis, StatementEquityComponentsAxis)),
-                                list("FinancialInstrument", list(FinancialInstrumentAxis, InvestmentTypeAxis, DerivativeInstrumentRiskAxis, DefinedBenefitPlanByPlanAssetCategoriesAxis, FairValueByAssetClassAxis, SecurityOwnedAndSoldNotYetPurchasedAtFairValueAxis, AssetsSoldUnderAgreementsToRepurchaseAxis, CashAndCashEquivalentsAxis, ExtinguishmentOfDebtAxis, ShortTermDebtTypeAxis, LongtermDebtTypeAxis, RestrictedCashAndCashEquivalentsCashAndCashEquivalentsAxis, CreditFacilityAxis, UnderlyingAssetClassAxis, StatementClassOfStockAxis)),
+                                list("FinancialInstrument", list(FinancialInstrumentAxis, InvestmentTypeAxis, DerivativeInstrumentRiskAxis, DefinedBenefitPlanByPlanAssetCategoriesAxis, FairValueByAssetClassAxis, SecurityOwnedAndSoldNotYetPurchasedAtFairValueAxis, AssetsSoldUnderAgreementsToRepurchaseAxis, CashAndCashEquivalentsAxis, ExtinguishmentOfDebtAxis, ShortTermDebtTypeAxis, LongtermDebtTypeAxis, RestrictedCashAndCashEquivalentsCashAndCashEquivalentsAxis, CreditFacilityAxis, UnderlyingAssetClassAxis, StatementClassOfStockAxis, DebtInstrumentAxis)),
                                 list("AccountStandards", list(AdjustmentsForChangeInAccountingPrincipleAxis,AdjustmentsForNewAccountingPronouncementsAxis)),
                                 list("MeasurementBasis", list(FairValueByMeasurementBasisAxis)),
                                 list("IndustrySector", list(EquitySecuritiesByIndustryAxis)),
@@ -41,8 +41,7 @@ The rule defines a dictionary of classes such as classes of stock , geographies,
                                 list("InternalCreditRating", list(InternalCreditAssessmentAxis)),
                                 list("FossilFuels", list(srt:ReserveQuantitiesByTypeOfReserveAxis)),
                                 list("ShareRepurchasePrograms", list(srt:ShareRepurchaseProgramAxis)),
-                                list("RestructuringType", list(RestructuringCostAndReserveAxis)),
-                                list("DebtByName", list(DebtInstrumentAxis))
+                                list("RestructuringType", list(RestructuringCostAndReserveAxis))
  )
 
 /** Classes of stock that may be used on both the StatementClassOfStockAxis and the StatementEquityComponentsAxis: CommonStockMember, PreferredStockMember, the US GAAP ClassOfStockDomain members, and any member the filer places below one of these. **/
